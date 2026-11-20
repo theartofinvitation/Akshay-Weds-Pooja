@@ -1,0 +1,744 @@
+<!doctype html>
+<html lang="hi" data-lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="अक्षय & पूजा का शुभ विवाह · 12 दिसंबर 2026 · गीता श्री गार्डन, नागदा">
+<meta property="og:title" content="Akshay weds Pooja · 12 December 2026">
+<meta property="og:description" content="You are warmly invited. Tap to open the invitation.">
+<meta property="og:image" content="palace_art.jpg">
+<meta name="theme-color" content="#fbe9df">
+<title>Akshay & Pooja</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@400;500&family=Tiro+Devanagari+Hindi&family=Rozha+One&display=swap">
+<style>
+/* Layout: a carved rose-gold jharokha holds the couple's ॐ-AP monogram as the hero; every section below sits in an arch-capped card on a peach damask ground. */
+:root{
+  --blush:#fbe9df;      /* page ground */
+  --petal:#f6dccd;      /* tinted bands */
+  --rose:#b55f57;       /* accent */
+  --sage:#a8b48c;       /* leaves, rules */
+  --olive:#8b2a24;      /* display ink */
+  --ink:#5b3b31;        /* body text */
+  --paper:#fff8f2;      /* cards */
+  --gold:#c98b6e;
+  --script:'Pinyon Script','Great Vibes',cursive;
+  --display:'Cormorant Garamond','Cormorant',Georgia,serif;
+  --body:'Jost','Helvetica Neue',Arial,sans-serif;
+  --hindi:'Tiro Devanagari Hindi','Noto Serif Devanagari','Mangal',serif;
+  --hindi-display:'Rozha One','Tiro Devanagari Hindi',serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--blush);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.6;
+  background-image:url(damask.png);background-size:160px 160px}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+[lang="hi"]{font-family:var(--hindi)}
+html[data-lang="en"] .t [lang="hi"], html:not([data-lang="en"]) .t [lang="en"]{display:none}
+
+/* language toggle */
+.lang{position:fixed;top:calc(12px + env(safe-area-inset-top,0px));right:calc(12px + env(safe-area-inset-right,0px));z-index:20;display:flex;
+  background:var(--paper);border:1px solid rgba(143,166,118,.5);border-radius:999px;padding:3px;box-shadow:0 2px 10px rgba(93,98,51,.08)}
+.lang button{border:0;background:none;font:500 13px var(--body);color:var(--olive);padding:6px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--olive);color:var(--paper)}
+.lang button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,.btn:focus-visible{outline:2px solid var(--rose);outline-offset:2px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;text-align:center;padding-block:72px 56px}
+.spray{position:absolute;width:min(420px,62vw);pointer-events:none;opacity:.95}
+.spray.tl{top:0;left:0}
+.spray.tr{top:0;right:0;transform:scaleX(-1)}
+.spray.bl{bottom:-30px;left:-40px;transform:scaleY(-1);width:min(300px,45vw);opacity:.7}
+.spray.br{bottom:-30px;right:-40px;transform:scale(-1,-1);width:min(300px,45vw);opacity:.7}
+.hero .inner{position:relative;display:flex;flex-direction:column;align-items:center;gap:6px}
+.kicker{font-family:var(--script);font-size:clamp(34px,8vw,52px);color:var(--olive);line-height:1;margin-top:14px}
+.kicker[lang="hi"]{font-family:var(--hindi);font-size:clamp(22px,5vw,30px);letter-spacing:.02em}
+.mono{position:relative;width:min(300px,72vw);aspect-ratio:1;max-width:100%;display:grid;place-items:center;margin-block:6px}
+.mono img{position:absolute;inset:0;width:100%;height:100%}
+.mono .disc{width:52%;aspect-ratio:1;border-radius:50%;background:var(--paper);display:grid;place-items:center;
+  box-shadow:0 6px 24px rgba(201,114,127,.15)}
+.mono .letters{font-family:var(--display);font-weight:500;color:var(--olive);font-size:clamp(44px,12vw,68px);line-height:1;letter-spacing:-.02em}
+.mono .letters i{font-family:var(--script);font-style:normal;color:var(--rose);font-size:.55em;margin:0 .06em;position:relative;top:-.12em}
+h1{font-family:var(--display);font-weight:500;color:var(--olive);font-size:clamp(44px,11vw,76px);line-height:1;margin:6px 0 0;text-wrap:balance}
+h1 .amp{font-family:var(--script);color:var(--rose);font-weight:400;font-size:.8em;padding:0 .12em}
+h1 [lang="hi"]{font-size:.72em}
+.date{font-family:var(--body);text-transform:uppercase;letter-spacing:.28em;font-size:13px;color:var(--olive);margin-top:10px}
+.date [lang="hi"]{letter-spacing:.04em;font-size:16px;text-transform:none}
+.place{font-family:var(--display);font-style:italic;font-size:19px;color:var(--ink)}
+
+.count{display:flex;gap:10px;justify-content:center;margin-top:22px;flex-wrap:wrap}
+.count div{min-width:72px;padding:10px 8px;background:var(--paper);border:1px solid rgba(196,164,104,.45);border-radius:14px}
+.count b{display:block;font-family:var(--display);font-weight:600;font-size:30px;line-height:1;color:var(--olive);font-variant-numeric:tabular-nums}
+.count span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+.count span[lang="hi"]{letter-spacing:0;font-size:13px;text-transform:none}
+
+/* sections */
+section{padding-block:56px}
+.head{text-align:center;display:flex;flex-direction:column;align-items:center;gap:2px;margin-bottom:26px}
+.head .script{font-family:var(--script);font-size:40px;color:var(--rose);line-height:1}
+.head .script[lang="hi"]{font-family:var(--hindi);font-size:26px}
+.head h2{font-family:var(--display);font-weight:500;font-size:clamp(28px,6vw,38px);color:var(--olive);margin:0;letter-spacing:.02em;text-wrap:balance}
+.sprig{width:200px;max-width:60%;opacity:.95;margin-top:6px}
+
+/* invitation */
+.invite{text-align:center;max-width:560px;margin:0 auto}
+.invite p{margin:0 0 14px}
+.fam{display:grid;grid-template-columns:1fr auto 1fr;gap:18px;align-items:center;margin-top:24px}
+.fam .side{background:var(--paper);border-radius:22px;padding:22px 18px;min-width:0;border:1px solid rgba(143,166,118,.35)}
+.fam .role{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--sage)}
+.fam .role[lang="hi"]{letter-spacing:0;font-size:14px;text-transform:none}
+.fam .nm{font-family:var(--display);font-size:30px;color:var(--olive);line-height:1.15;margin:4px 0 8px}
+.fam .nm[lang="hi"]{font-family:var(--hindi);font-size:24px}
+.fam .rel{font-size:14px;line-height:1.55}
+.fam .and{font-family:var(--script);font-size:46px;color:var(--rose)}
+
+/* events */
+.band{background:var(--petal);position:relative}
+.days{display:grid;gap:18px}
+.day{background:var(--paper);border-radius:22px;padding:22px clamp(18px,4vw,30px);display:grid;grid-template-columns:96px 1fr;gap:18px;border:1px solid rgba(201,114,127,.18)}
+.day .cal{text-align:center;border-right:1px solid rgba(143,166,118,.4);padding-right:14px}
+.day .cal b{display:block;font-family:var(--display);font-size:46px;line-height:1;color:var(--olive);font-weight:600}
+.day .cal span{display:block;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+.day .cal span[lang="hi"]{letter-spacing:0;font-size:14px;text-transform:none}
+.day ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;min-width:0}
+.day li{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-bottom:1px dashed rgba(143,166,118,.45);padding-bottom:8px}
+.day li:last-child{border-bottom:0;padding-bottom:0}
+.ev{font-family:var(--display);font-size:21px;color:var(--olive);font-weight:500}
+.ev[lang="hi"]{font-family:var(--hindi);font-size:18px}
+.tm{font-size:14px;color:var(--rose);font-variant-numeric:tabular-nums;white-space:nowrap}
+.loc{grid-column:2;font-size:13px;color:var(--ink);opacity:.85}
+.day.main{border:1.5px solid var(--gold);box-shadow:0 10px 30px rgba(196,164,104,.18)}
+.day.main .ev.big{color:var(--rose)}
+
+/* venue */
+.venue{text-align:center;background:var(--paper);border-radius:28px;padding:34px 22px;border:1px solid rgba(143,166,118,.35);max-width:560px;margin:0 auto}
+.venue .vn{font-family:var(--display);font-size:32px;color:var(--olive);line-height:1.15}
+.venue .vn[lang="hi"]{font-family:var(--hindi);font-size:26px}
+.btn{display:inline-flex;align-items:center;gap:8px;margin-top:18px;padding:12px 22px;border-radius:999px;background:var(--olive);color:var(--paper);
+  text-decoration:none;font:500 15px var(--body);border:0;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--olive);border:1px solid var(--olive)}
+.btn svg{width:18px;height:18px}
+.home{margin-top:22px;font-size:14px}
+
+/* rsvp */
+form{background:var(--paper);border-radius:28px;padding:26px clamp(18px,4vw,32px);max-width:560px;margin:0 auto;display:grid;gap:16px;border:1px solid rgba(201,114,127,.2)}
+label{display:grid;gap:6px;font-size:14px;color:var(--olive);font-weight:500}
+input[type=text],select{font:16px var(--body);color:var(--ink);background:var(--blush);border:1px solid rgba(143,166,118,.55);border-radius:12px;padding:11px 12px;width:100%}
+.checks{display:flex;flex-wrap:wrap;gap:8px}
+.checks label{display:flex;align-items:center;gap:6px;font-weight:400;background:var(--blush);border:1px solid rgba(143,166,118,.45);border-radius:999px;padding:6px 12px;cursor:pointer}
+.checks input{accent-color:var(--rose)}
+.note{font-size:13px;color:var(--ink);opacity:.8;text-align:center}
+.err{color:#a33a4a;font-size:13px}
+
+/* contact */
+.contacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;max-width:560px;margin:0 auto}
+.person{background:var(--paper);border-radius:22px;padding:20px;text-align:center;border:1px solid rgba(143,166,118,.35)}
+.person .pn{font-family:var(--display);font-size:24px;color:var(--olive)}
+.person .pn[lang="hi"]{font-family:var(--hindi);font-size:21px}
+.person .ph{font-variant-numeric:tabular-nums;letter-spacing:.04em;margin:4px 0 10px;user-select:all}
+.copy{font:500 13px var(--body);color:var(--rose);background:none;border:1px solid rgba(201,114,127,.5);border-radius:999px;padding:6px 14px;cursor:pointer}
+
+footer{text-align:center;padding-block:40px 70px;position:relative;overflow:hidden}
+footer .script{font-family:var(--script);font-size:40px;color:var(--olive)}
+footer .script[lang="hi"]{font-family:var(--hindi);font-size:24px}
+footer p{margin:6px 0;font-size:14px}
+
+@media (max-width:560px){
+  .fam{grid-template-columns:1fr}
+  .fam .and{line-height:.6}
+  .day{grid-template-columns:1fr}
+  .day .cal{border-right:0;border-bottom:1px solid rgba(143,166,118,.4);padding:0 0 10px;display:flex;gap:10px;align-items:baseline;justify-content:center}
+  .day .cal b{display:inline;font-size:38px}
+  .day .cal span{display:inline}
+  .loc{grid-column:1}
+}
+@keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+@keyframes sway{0%,100%{transform:rotate(0)}50%{transform:rotate(1.2deg)}}
+.hero .inner>*{animation:rise .9s ease both}
+.spray.tl{transform-origin:0 0;animation:sway 7s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+
+/* ---------- arched palace-gate intro ---------- */
+#env{position:fixed;inset:0;z-index:50;display:grid;place-items:center;overflow:hidden;
+  background:linear-gradient(rgba(251,233,223,.35),rgba(251,233,223,.35)),url(palace_blur.jpg) center/cover,#f6dccd;
+  transition:opacity .45s ease, visibility 0s linear .45s}
+#env.gone{opacity:0;visibility:hidden;pointer-events:none}
+/* walk-through: doors swing, camera moves forward through the doorway to the monogram */
+.gate{transform-origin:50% 52%;will-change:transform;transition:filter .6s ease}
+#env.open .gate{filter:none;animation:walkin 2.5s cubic-bezier(.45,0,.3,1) .3s both}
+@keyframes walkin{from{transform:scale(1)}to{transform:scale(5.4)}}
+/* one continuous image flies from the zoomed doorway back into its place on the page */
+#fly{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden}
+#fly .ph{position:absolute;overflow:hidden;transform-origin:0 0;will-change:transform,border-radius}
+#fly .ph img{width:100%;height:100%;display:block}
+body.locked .hero .inner>*{opacity:0}
+body.entering .hero .scene{visibility:hidden}
+body.entering .hero .scene img{animation:none}
+body.entering .hero .hcard{z-index:61}
+.gate{position:relative;width:min(92vw,calc(88vh * .645),560px);aspect-ratio:800/1240;filter:drop-shadow(0 18px 30px rgba(140,70,50,.25))}
+.gate .frame{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
+.doors{position:absolute;left:10.250%;top:7.976%;width:79.500%;height:82.992%;z-index:2;perspective:1400px}
+.doors .peek{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(0.00% 100.00%,0.86% 23.40%,0.65% 22.20%,0.82% 21.35%,1.10% 20.66%,1.41% 20.07%,1.76% 19.55%,2.17% 19.09%,2.63% 18.69%,3.13% 18.33%,3.68% 18.02%,4.26% 17.76%,4.87% 17.52%,5.49% 17.32%,6.12% 17.15%,6.35% 16.84%,6.31% 16.44%,6.31% 16.05%,6.34% 15.68%,6.41% 15.33%,6.52% 14.99%,6.66% 14.68%,6.83% 14.38%,7.03% 14.09%,7.25% 13.82%,7.50% 13.57%,7.76% 13.33%,8.03% 13.11%,8.32% 12.89%,8.62% 12.68%,8.92% 12.48%,9.22% 12.29%,9.52% 12.10%,9.84% 11.92%,10.15% 11.75%,10.48% 11.59%,10.82% 11.43%,11.17% 11.30%,11.53% 11.17%,11.90% 11.05%,12.28% 10.95%,12.68% 10.86%,13.08% 10.78%,13.49% 10.72%,13.91% 10.66%,14.34% 10.62%,14.77% 10.59%,15.21% 10.57%,15.65% 10.55%,16.10% 10.55%,16.31% 10.36%,16.45% 10.10%,16.59% 9.85%,16.75% 9.61%,16.92% 9.37%,17.10% 9.15%,17.29% 8.93%,17.50% 8.72%,17.71% 8.52%,17.94% 8.34%,18.17% 8.16%,18.42% 7.99%,18.67% 7.83%,18.93% 7.68%,19.20% 7.54%,19.48% 7.40%,19.76% 7.27%,20.05% 7.15%,20.35% 7.04%,20.64% 6.93%,20.94% 6.83%,21.24% 6.72%,21.54% 6.62%,21.85% 6.52%,22.15% 6.43%,22.46% 6.34%,22.77% 6.26%,23.08% 6.18%,23.40% 6.11%,23.72% 6.05%,24.05% 5.99%,24.38% 5.95%,24.72% 5.91%,25.07% 5.88%,25.41% 5.86%,25.76% 5.85%,26.12% 5.85%,26.48% 5.85%,26.84% 5.87%,27.21% 5.89%,27.58% 5.92%,27.95% 5.96%,28.33% 6.00%,28.70% 6.05%,29.08% 6.11%,29.33% 5.98%,29.54% 5.78%,29.75% 5.58%,29.97% 5.39%,30.20% 5.21%,30.43% 5.04%,30.66% 4.87%,30.90% 4.71%,31.15% 4.56%,31.40% 4.41%,31.66% 4.28%,31.92% 4.15%,32.19% 4.03%,32.46% 3.91%,32.74% 3.81%,33.02% 3.71%,33.30% 3.62%,33.59% 3.54%,33.88% 3.46%,34.18% 3.39%,34.47% 3.32%,34.77% 3.26%,35.07% 3.20%,35.37% 3.15%,35.67% 3.09%,35.97% 3.04%,36.27% 2.99%,36.58% 2.94%,36.88% 2.89%,37.19% 2.85%,37.49% 2.82%,37.80% 2.79%,38.12% 2.77%,38.43% 2.75%,38.75% 2.75%,39.07% 2.75%,39.39% 2.75%,39.71% 2.77%,40.04% 2.79%,40.36% 2.82%,40.69% 2.86%,41.02% 2.91%,41.36% 2.96%,41.69% 3.02%,42.03% 3.09%,42.36% 3.16%,42.70% 3.24%,43.04% 3.33%,43.38% 3.42%,43.68% 3.40%,43.94% 3.24%,44.20% 3.07%,44.46% 2.91%,44.73% 2.76%,45.01% 2.60%,45.29% 2.45%,45.58% 2.30%,45.87% 2.15%,46.16% 2.00%,46.45% 1.85%,46.73% 1.69%,47.01% 1.52%,47.28% 1.35%,47.54% 1.18%,47.81% 1.00%,48.07% 0.82%,48.34% 0.64%,48.62% 0.47%,48.91% 0.32%,49.20% 0.19%,49.50% 0.09%,49.80% 0.03%,50.10% 0.01%,50.40% 0.07%,50.70% 0.16%,50.99% 0.28%,51.28% 0.42%,51.56% 0.58%,51.84% 0.76%,52.11% 0.94%,52.37% 1.12%,52.63% 1.29%,52.90% 1.47%,53.17% 1.63%,53.46% 1.80%,53.74% 1.95%,54.03% 2.10%,54.33% 2.25%,54.61% 2.40%,54.90% 2.55%,55.18% 2.71%,55.45% 2.86%,55.72% 3.02%,55.98% 3.18%,56.23% 3.35%,56.51% 3.45%,56.85% 3.36%,57.19% 3.27%,57.52% 3.19%,57.86% 3.11%,58.20% 3.04%,58.53% 2.98%,58.87% 2.92%,59.20% 2.87%,59.53% 2.83%,59.86% 2.80%,60.18% 2.77%,60.51% 2.76%,60.83% 2.75%,61.15% 2.75%,61.46% 2.75%,61.78% 2.76%,62.09% 2.78%,62.40% 2.81%,62.71% 2.84%,63.02% 2.88%,63.32% 2.92%,63.63% 2.97%,63.93% 3.02%,64.23% 3.07%,64.53% 3.13%,64.83% 3.18%,65.13% 3.24%,65.43% 3.30%,65.72% 3.37%,66.02% 3.44%,66.31% 3.51%,66.60% 3.59%,66.89% 3.68%,67.17% 3.78%,67.45% 3.88%,67.72% 3.99%,67.99% 4.11%,68.25% 4.23%,68.51% 4.37%,68.77% 4.51%,69.01% 4.66%,69.26% 4.81%,69.49% 4.98%,69.73% 5.15%,69.95% 5.33%,70.17% 5.52%,70.39% 5.71%,70.60% 5.91%,70.81% 6.11%,71.17% 6.07%,71.55% 6.02%,71.92% 5.97%,72.30% 5.93%,72.67% 5.90%,73.03% 5.87%,73.40% 5.86%,73.76% 5.85%,74.12% 5.85%,74.47% 5.85%,74.82% 5.87%,75.16% 5.90%,75.50% 5.93%,75.84% 5.98%,76.17% 6.03%,76.49% 6.09%,76.81% 6.16%,77.13% 6.23%,77.44% 6.31%,77.75% 6.40%,78.05% 6.49%,78.36% 6.59%,78.66% 6.69%,78.96% 6.79%,79.26% 6.90%,79.56% 7.00%,79.85% 7.12%,80.14% 7.23%,80.43% 7.36%,80.71% 7.49%,80.98% 7.63%,81.24% 7.78%,81.50% 7.93%,81.75% 8.10%,81.99% 8.28%,82.22% 8.46%,82.43% 8.66%,82.64% 8.86%,82.84% 9.07%,83.02% 9.30%,83.19% 9.53%,83.35% 9.77%,83.50% 10.02%,83.64% 10.27%,83.77% 10.53%,84.20% 10.55%,84.64% 10.56%,85.08% 10.58%,85.52% 10.61%,85.95% 10.65%,86.37% 10.70%,86.79% 10.76%,87.19% 10.83%,87.59% 10.92%,87.97% 11.02%,88.35% 11.13%,88.71% 11.25%,89.06% 11.39%,89.41% 11.53%,89.74% 11.69%,90.06% 11.86%,90.37% 12.04%,90.68% 12.23%,90.98% 12.42%,91.28% 12.62%,91.58% 12.82%,91.87% 13.03%,92.15% 13.26%,92.42% 13.49%,92.67% 13.74%,92.90% 14.00%,93.11% 14.28%,93.29% 14.57%,93.44% 14.89%,93.55% 15.21%,93.64% 15.56%,93.68% 15.93%,93.69% 16.31%,93.67% 16.70%,93.66% 17.09%,94.30% 17.26%,94.92% 17.45%,95.54% 17.67%,96.13% 17.93%,96.69% 18.23%,97.21% 18.56%,97.68% 18.95%,98.11% 19.39%,98.48% 19.89%,98.80% 20.45%,99.09% 21.11%,99.32% 21.89%,99.29% 22.94%,97.49% 25.44%,100.00% 100.00%)}
+.door{position:absolute;top:0;bottom:0;width:50%;cursor:pointer;transition:transform 2.2s cubic-bezier(.45,0,.2,1) .15s, filter 2.2s ease .15s;
+  background:linear-gradient(90deg,rgba(90,30,20,.10),transparent 14%,transparent 86%,rgba(90,30,20,.16)),url(damask.png),linear-gradient(180deg,#e7b49c,#cf8c73 70%,#c27e66);
+  background-size:auto,110px 110px,auto}
+.door.l{left:0;transform-origin:left center;clip-path:polygon(0.00% 100.00%,1.71% 23.40%,1.29% 22.20%,1.64% 21.35%,2.20% 20.66%,2.83% 20.07%,3.53% 19.55%,4.34% 19.09%,5.25% 18.69%,6.27% 18.33%,7.36% 18.02%,8.52% 17.76%,9.74% 17.52%,10.98% 17.32%,12.25% 17.15%,12.70% 16.84%,12.62% 16.44%,12.62% 16.05%,12.69% 15.68%,12.83% 15.33%,13.04% 14.99%,13.32% 14.68%,13.66% 14.38%,14.06% 14.09%,14.50% 13.82%,14.99% 13.57%,15.52% 13.33%,16.07% 13.11%,16.65% 12.89%,17.24% 12.68%,17.84% 12.48%,18.44% 12.29%,19.05% 12.10%,19.67% 11.92%,20.31% 11.75%,20.96% 11.59%,21.64% 11.43%,22.34% 11.30%,23.06% 11.17%,23.80% 11.05%,24.57% 10.95%,25.35% 10.86%,26.16% 10.78%,26.98% 10.72%,27.82% 10.66%,28.67% 10.62%,29.54% 10.59%,30.42% 10.57%,31.30% 10.55%,32.19% 10.55%,32.62% 10.36%,32.90% 10.10%,33.19% 9.85%,33.51% 9.61%,33.84% 9.37%,34.20% 9.15%,34.59% 8.93%,34.99% 8.72%,35.42% 8.52%,35.87% 8.34%,36.34% 8.16%,36.83% 7.99%,37.34% 7.83%,37.87% 7.68%,38.41% 7.54%,38.96% 7.40%,39.53% 7.27%,40.11% 7.15%,40.69% 7.04%,41.29% 6.93%,41.88% 6.83%,42.48% 6.72%,43.09% 6.62%,43.69% 6.52%,44.30% 6.43%,44.91% 6.34%,45.54% 6.26%,46.16% 6.18%,46.80% 6.11%,47.45% 6.05%,48.10% 5.99%,48.77% 5.95%,49.45% 5.91%,50.13% 5.88%,50.82% 5.86%,51.53% 5.85%,52.24% 5.85%,52.96% 5.85%,53.69% 5.87%,54.42% 5.89%,55.16% 5.92%,55.91% 5.96%,56.65% 6.00%,57.41% 6.05%,58.16% 6.11%,58.66% 5.98%,59.08% 5.78%,59.51% 5.58%,59.95% 5.39%,60.40% 5.21%,60.86% 5.04%,61.33% 4.87%,61.81% 4.71%,62.30% 4.56%,62.81% 4.41%,63.32% 4.28%,63.85% 4.15%,64.38% 4.03%,64.93% 3.91%,65.48% 3.81%,66.04% 3.71%,66.61% 3.62%,67.19% 3.54%,67.77% 3.46%,68.35% 3.39%,68.95% 3.32%,69.54% 3.26%,70.14% 3.20%,70.74% 3.15%,71.34% 3.09%,71.94% 3.04%,72.55% 2.99%,73.15% 2.94%,73.76% 2.89%,74.37% 2.85%,74.99% 2.82%,75.61% 2.79%,76.23% 2.77%,76.86% 2.75%,77.49% 2.75%,78.13% 2.75%,78.77% 2.75%,79.42% 2.77%,80.07% 2.79%,80.73% 2.82%,81.39% 2.86%,82.05% 2.91%,82.71% 2.96%,83.38% 3.02%,84.05% 3.09%,84.73% 3.16%,85.40% 3.24%,86.08% 3.33%,86.76% 3.42%,87.37% 3.40%,87.88% 3.24%,88.39% 3.07%,88.92% 2.91%,89.46% 2.76%,90.02% 2.60%,90.58% 2.45%,91.16% 2.30%,91.74% 2.15%,92.32% 2.00%,92.90% 1.85%,93.47% 1.69%,94.02% 1.52%,94.56% 1.35%,95.09% 1.18%,95.61% 1.00%,96.14% 0.82%,96.69% 0.64%,97.24% 0.47%,97.82% 0.32%,98.40% 0.19%,99.00% 0.09%,99.60% 0.03%,100.00% 0.00%,100.00% 100.00%)}
+.door.r{right:0;transform-origin:right center;clip-path:polygon(0.00% 100.00%,0.00% 0.00%,0.60% 0.04%,1.20% 0.12%,1.79% 0.23%,2.37% 0.37%,2.94% 0.53%,3.50% 0.70%,4.03% 0.88%,4.56% 1.06%,5.09% 1.23%,5.62% 1.41%,6.16% 1.58%,6.72% 1.74%,7.29% 1.90%,7.87% 2.05%,8.46% 2.20%,9.04% 2.35%,9.61% 2.50%,10.17% 2.65%,10.72% 2.81%,11.25% 2.97%,11.78% 3.13%,12.29% 3.29%,12.80% 3.46%,13.47% 3.39%,14.15% 3.30%,14.82% 3.21%,15.50% 3.14%,16.17% 3.06%,16.84% 3.00%,17.51% 2.94%,18.17% 2.89%,18.83% 2.85%,19.49% 2.81%,20.15% 2.78%,20.80% 2.76%,21.44% 2.75%,22.08% 2.75%,22.72% 2.75%,23.35% 2.76%,23.98% 2.78%,24.60% 2.80%,25.22% 2.83%,25.83% 2.87%,26.44% 2.91%,27.05% 2.95%,27.65% 3.00%,28.26% 3.05%,28.86% 3.11%,29.46% 3.16%,30.06% 3.22%,30.66% 3.28%,31.25% 3.35%,31.84% 3.41%,32.43% 3.49%,33.01% 3.57%,33.58% 3.65%,34.15% 3.74%,34.71% 3.84%,35.26% 3.95%,35.80% 4.07%,36.33% 4.19%,36.85% 4.32%,37.36% 4.46%,37.86% 4.61%,38.35% 4.76%,38.83% 4.92%,39.30% 5.09%,39.76% 5.27%,40.20% 5.46%,40.64% 5.65%,41.06% 5.84%,41.48% 6.04%,42.09% 6.09%,42.84% 6.04%,43.60% 5.99%,44.34% 5.94%,45.09% 5.91%,45.82% 5.88%,46.56% 5.86%,47.28% 5.85%,48.00% 5.85%,48.71% 5.85%,49.41% 5.87%,50.10% 5.89%,50.78% 5.92%,51.45% 5.96%,52.12% 6.01%,52.77% 6.07%,53.41% 6.13%,54.05% 6.21%,54.67% 6.29%,55.29% 6.37%,55.90% 6.46%,56.51% 6.56%,57.11% 6.66%,57.72% 6.76%,58.32% 6.86%,58.91% 6.97%,59.50% 7.08%,60.09% 7.19%,60.66% 7.32%,61.23% 7.45%,61.78% 7.58%,62.31% 7.73%,62.83% 7.88%,63.33% 8.04%,63.82% 8.22%,64.28% 8.40%,64.72% 8.59%,65.14% 8.79%,65.54% 9.00%,65.92% 9.22%,66.27% 9.45%,66.60% 9.69%,66.91% 9.93%,67.20% 10.19%,67.46% 10.45%,68.10% 10.55%,68.99% 10.56%,69.87% 10.57%,70.75% 10.60%,71.61% 10.63%,72.46% 10.68%,73.30% 10.74%,74.11% 10.81%,74.91% 10.89%,75.69% 10.98%,76.45% 11.09%,77.18% 11.21%,77.90% 11.34%,78.59% 11.48%,79.26% 11.64%,79.91% 11.80%,80.54% 11.98%,81.16% 12.16%,81.76% 12.35%,82.36% 12.55%,82.96% 12.75%,83.55% 12.96%,84.12% 13.18%,84.66% 13.41%,85.17% 13.66%,85.65% 13.91%,86.08% 14.18%,86.46% 14.47%,86.78% 14.78%,87.04% 15.10%,87.23% 15.44%,87.35% 15.80%,87.39% 16.18%,87.36% 16.57%,87.26% 16.98%,88.17% 17.20%,89.43% 17.39%,90.67% 17.60%,91.87% 17.84%,93.01% 18.12%,94.08% 18.45%,95.06% 18.81%,95.94% 19.24%,96.72% 19.71%,97.39% 20.26%,97.99% 20.88%,98.52% 21.61%,98.70% 22.55%,97.63% 23.99%,100.00% 100.00%)}
+#env.open .door.l{transform:rotateY(-108deg);filter:brightness(.8)}
+#env.open .door.r{transform:rotateY(108deg);filter:brightness(.8)}
+.door .arc{position:absolute;left:14%;right:14%;top:20%;height:40%;border:2px solid #f7d6c0;border-radius:50% 50% 6px 6px / 22% 22% 6px 6px;
+  box-shadow:inset 0 0 0 6px rgba(247,214,192,.14), inset 0 0 0 8px rgba(247,214,192,.6);background:radial-gradient(circle,rgba(255,236,224,.6) 1.5px,transparent 2.1px) 0 0/16px 16px}
+.door .pan{position:absolute;left:14%;right:14%;top:66%;bottom:5%;border:2px solid #f7d6c0;border-radius:6px;box-shadow:inset 0 0 0 7px rgba(247,214,192,.18), inset 0 0 0 9px rgba(247,214,192,.55)}
+.door .pan::before{content:"";position:absolute;inset:24% 30%;border:2px solid rgba(247,214,192,.75);transform:rotate(45deg);border-radius:3px}
+.door .ring{position:absolute;top:61%;width:22px;height:26px;border:3px solid #f2c7a8;border-radius:50%;box-shadow:0 2px 3px rgba(0,0,0,.3)}
+.door.l .ring{right:6%} .door.r .ring{left:6%}
+.door .ring::before{content:"";position:absolute;left:50%;top:-10px;width:11px;height:11px;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 35% 35%,#fff3e8,#d49a7b 60%,#8c5642)}
+.gate-mid{position:absolute;inset:0;z-index:4;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.6cqw;text-align:center;padding:16% 14% 14%;
+  container-type:inline-size;pointer-events:none;transition:opacity .45s ease, transform .6s ease}
+#env.open .gate-mid{opacity:0;transform:scale(.94)}
+.gate-mid::before{content:"";position:absolute;left:12%;right:12%;top:18%;bottom:12%;z-index:-1;background:radial-gradient(ellipse at center,rgba(120,45,32,.5) 0%,rgba(120,45,32,.25) 45%,transparent 70%)}
+.gate-mid .gm{font-family:var(--hindi);color:#fff1e6;font-size:max(12px,3.4cqw);text-shadow:0 1px 3px rgba(0,0,0,.35)}
+.gate-mid .seal{position:relative;width:40cqw;aspect-ratio:600/750;display:grid;place-items:center;filter:drop-shadow(0 8px 16px rgba(60,15,10,.4));animation:breathe 3.2s ease-in-out infinite}
+.gate-mid .seal img{position:absolute;inset:0;width:100%;height:100%}
+.gate-mid .seal img.logo{position:relative;inset:auto;width:56%;height:auto}
+@keyframes breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.035)}}
+.gate-mid .nm{font-family:var(--hindi-display);color:#fff6ee;font-size:max(26px,9cqw);line-height:1.1;text-shadow:0 2px 8px rgba(60,15,10,.5)}
+.gate-mid .nm .amp{font-family:var(--script);color:#ffd9c2;font-size:.8em;padding:0 .1em}
+.gate-mid .dt{font-family:var(--hindi);color:#fff1e6;font-size:max(13px,3.6cqw);text-shadow:0 1px 3px rgba(0,0,0,.35)}
+.tapbtn{pointer-events:auto;margin-top:2cqw;display:inline-flex;flex-direction:column;align-items:center;gap:2px;padding:10px 24px;border-radius:999px;cursor:pointer;
+  border:1.5px solid #fbe0cc;background:linear-gradient(180deg,#9b3a30,#7b221d);color:#fff7f0;font:16px var(--hindi);box-shadow:0 6px 18px rgba(60,15,10,.35);animation:pulse 2s ease-in-out infinite}
+.tapbtn small{font:500 10px var(--body);letter-spacing:.22em;text-transform:uppercase;color:#ffd9c2}
+.tapbtn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.gate-roses{position:absolute;bottom:-4%;width:54%;z-index:5;pointer-events:none;transition:transform 1.4s ease, opacity 1.1s ease}
+.gate-roses.a{left:-16%} .gate-roses.b{right:-16%;transform:scaleX(-1)}
+#env.open .gate-roses.a{transform:translateX(-40%);opacity:0}
+#env.open .gate-roses.b{transform:scaleX(-1) translateX(-40%);opacity:0}
+/* ---------- hero: garden-palace scene ---------- */
+.hero{padding-block:58px 34px}
+.hero .ganesh{margin-top:0;background:none;padding:0}
+.hero .ganesh .gm{font-size:16px;color:var(--gold)}
+.hero .ganesh .sl{font-size:14.5px}
+.scene{width:min(620px,100%);aspect-ratio:1/1;margin-top:12px;overflow:hidden;border-radius:48% 48% 16px 16px / 30% 30% 16px 16px;
+  box-shadow:0 0 0 5px var(--paper),0 0 0 7px var(--gold),0 22px 46px rgba(150,80,60,.22)}
+.scene img{width:100%;height:100%;object-fit:cover;transform-origin:50% 42%;animation:kb 20s ease-in-out infinite alternate}
+@keyframes kb{from{transform:scale(1)}to{transform:scale(1.08)}}
+.hcard{position:relative;width:min(540px,94%);margin-top:-64px;background:var(--paper);border-radius:22px;padding:30px 16px 22px;display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center}
+.hcard .kicker{margin:0}
+.hcard .kicker[lang="hi"]{font-size:19px;color:var(--gold);font-family:var(--hindi)}
+.hcard h1{font-size:clamp(40px,10vw,58px);margin:2px 0}
+.hcard h1 [lang="hi"]{font-family:var(--hindi-display);font-size:1em}
+.hcard .place [lang="hi"]{font-family:var(--hindi);font-style:normal}
+.hcard .count{margin-top:14px;gap:8px;flex-wrap:nowrap}
+.hcard .count div{min-width:0;width:68px;padding:9px 4px}
+.hcard .count b{font-size:26px}
+@media (prefers-reduced-motion:reduce){.scene img{animation:none}}
+.tapline{font-family:var(--hindi);color:var(--olive);font-size:17px;display:flex;flex-direction:column;align-items:center;gap:2px;animation:pulse 2s ease-in-out infinite}
+.tapline small{font-family:var(--body);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--rose)}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.55}}
+body.locked{overflow:hidden}
+
+/* ---------- falling petals ---------- */
+#petals{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:5}
+
+/* ---------- day tabs ---------- */
+.tabs{display:flex;justify-content:center;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.tabs button{font:500 14px var(--body);color:var(--olive);background:var(--paper);border:1px solid rgba(143,166,118,.55);
+  border-radius:999px;padding:8px 16px;cursor:pointer;transition:background .25s,color .25s}
+.tabs button [lang="hi"]{font-family:var(--hindi);font-size:15px}
+.tabs button[aria-selected="true"]{background:var(--rose);border-color:var(--rose);color:var(--paper)}
+.day{animation:cardin .5s ease}
+@keyframes cardin{from{transform:translateY(12px) scale(.98)}to{transform:none}}
+
+/* ---------- ganesh ---------- */
+.ganesh{display:flex;flex-direction:column;align-items:center;gap:2px;margin-top:clamp(56px,14vw,40px);position:relative;z-index:1;background:radial-gradient(closest-side,var(--blush) 70%,transparent);padding:6px 18px;font-family:var(--hindi);color:var(--olive)}
+.ganesh .gm{font-size:15px;color:var(--rose);letter-spacing:.04em}
+.ganesh .sl{font-size:14px;line-height:1.7;opacity:.9}
+/* ---------- family slider (patrika pages 5–7) ---------- */
+.slider{position:relative}
+.track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:34px 6px 10px}
+.track::-webkit-scrollbar{display:none}
+.slide{flex:0 0 calc(100% - 12px);min-width:0;scroll-snap-align:center;background:var(--paper);border-radius:26px;padding:26px clamp(16px,4vw,30px);
+  text-align:center;border:1px solid rgba(201,114,127,.2);display:flex;flex-direction:column;gap:6px}
+.slide h3{margin:0;font-family:var(--hindi);font-weight:400;font-size:26px;color:var(--olive);line-height:1.3}
+.slide .cap{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--rose)}
+.slide .sub{font-family:var(--hindi);font-size:15px;color:var(--rose)}
+.slide ul{list-style:none;margin:0;padding:0;font-family:var(--hindi);font-size:15.5px;line-height:1.85;color:var(--ink)}
+.slide ul.small{font-size:14px;line-height:1.75}
+.slide .ph{font-family:var(--body);font-variant-numeric:tabular-nums;color:var(--rose);font-size:13px;white-space:nowrap}
+.slide .poem{font-family:var(--hindi);color:var(--rose);font-size:15px;line-height:1.7}
+.slide .kids{font-family:var(--hindi);font-size:15px;line-height:1.8}
+.slide hr{border:0;height:22px;background:url(divider.png) center/auto 100% no-repeat;margin:10px 0}
+.snav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:16px}
+.snav .arrow{width:42px;height:42px;border-radius:50%;border:1px solid var(--olive);background:var(--paper);color:var(--olive);cursor:pointer;display:grid;place-items:center}
+.snav .arrow:disabled{opacity:.35;cursor:default}
+.snav .arrow svg{width:18px;height:18px}
+.dots{display:flex;gap:8px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;padding:0;background:rgba(93,98,51,.25);cursor:pointer;transition:width .3s,background .3s}
+.dots button[aria-current="true"]{width:26px;border-radius:6px;background:var(--rose)}
+.swipe{font-size:12px;color:var(--ink);opacity:.7;text-align:center;margin-top:8px}
+
+/* ---------- rich theme ---------- */
+.hero{padding-block:58px 30px}
+.jh{position:relative;width:min(560px,calc(100% + 16px));aspect-ratio:900/1300;margin:0 auto;container-type:inline-size}
+.jh>img{position:absolute;pointer-events:none}
+.jh .frame{inset:0;width:100%;height:100%}
+.jh .rl{left:-4%;bottom:-2%;width:46%}
+.jh .rr{right:-4%;bottom:-2%;width:46%;transform:scaleX(-1)}
+.jh .jh-in{position:absolute;left:19%;right:19%;top:7.5%;bottom:21%;display:flex;flex-direction:column;align-items:center;text-align:center;gap:1.2cqw}
+.jh-in .ganesh{margin:0;padding:0;background:none;font-size:2.6cqw}
+.jh-in .ganesh .gm{font-size:max(11px,3cqw);color:var(--gold)}
+.jh-in .ganesh .sl{font-size:max(10px,2.5cqw);line-height:1.55;color:var(--ink)}
+.medal{position:relative;width:34cqw;aspect-ratio:600/750;margin-top:1cqw;display:grid;place-items:center;animation:glow 4s ease-in-out infinite}
+.medal img{position:absolute;inset:0;width:100%;height:100%}
+.medal img.logo{position:relative;inset:auto;width:58%;height:auto}
+@keyframes glow{0%,100%{filter:drop-shadow(0 0 0 rgba(201,139,110,0))}50%{filter:drop-shadow(0 0 2.2cqw rgba(201,139,110,.45))}}
+.jh-in .kicker{margin:0;font-size:6.5cqw}
+.jh-in .kicker[lang="hi"]{font-size:max(13px,4cqw);color:var(--gold);font-family:var(--hindi)}
+.jh-in h1{font-size:9cqw;margin:0}
+.jh-in h1 [lang="hi"]{font-family:var(--hindi-display);font-size:1em;color:var(--olive)}
+.jh-in .date{font-size:max(10px,2.5cqw);margin-top:.6cqw;letter-spacing:.2em}
+.jh-in .date [lang="hi"]{font-size:max(13px,3.3cqw)}
+.jh-in .place{font-size:max(13px,3.4cqw)}
+.jh-in .place [lang="hi"]{font-family:var(--hindi);font-style:normal}
+.jh .jh-in .count{margin-top:auto;gap:1.6cqw;flex-wrap:nowrap}
+.jh .jh-in .count div{min-width:0;width:12.5cqw;padding:1.5cqw 0;border-radius:2.6cqw}
+.jh .jh-in .count b{font-size:max(18px,5.6cqw)}
+.jh .jh-in .count span{font-size:max(9px,2.2cqw)!important;letter-spacing:.06em}
+.count div{border-color:rgba(201,139,110,.6);background:linear-gradient(180deg,var(--paper),#fbe6da)}
+
+h2 [lang="hi"], .head h2[lang="hi"]{font-family:var(--hindi-display);font-weight:400}
+.fam .nm[lang="hi"], .venue .vn[lang="hi"], .person .pn[lang="hi"], .slide h3{font-family:var(--hindi-display)}
+.head .divider{width:240px;max-width:70%;height:auto;margin-top:6px}
+.band{background:var(--petal) url(damask.png);background-size:160px 160px}
+
+/* arch-capped cards with a fine rose-gold double rule */
+.arch{position:relative;margin-top:26px;border:1px solid rgba(201,139,110,.7)!important;box-shadow:0 0 0 4px var(--paper),0 0 0 5px rgba(201,139,110,.45),0 14px 30px rgba(181,95,87,.10)}
+.arch::before{content:"";position:absolute;left:3%;right:3%;top:-30px;height:52px;background:url(archcap.png) center/100% 100% no-repeat;pointer-events:none}
+.day.main{box-shadow:0 0 0 4px var(--paper),0 0 0 6px var(--gold),0 16px 34px rgba(181,95,87,.18)}
+.tabs button[aria-selected="true"]{background:linear-gradient(180deg,#c98b6e,#a8634b);border-color:#a8634b}
+.btn{background:linear-gradient(180deg,#9b3a30,#7b221d);box-shadow:0 6px 16px rgba(139,42,36,.25)}
+footer{background:linear-gradient(180deg,transparent,rgba(246,220,205,.7))}
+footer .roses2{display:flex;justify-content:space-between;pointer-events:none;margin-top:-10px}
+footer .roses2 img{width:min(220px,40vw)}
+footer .roses2 img:last-child{transform:scaleX(-1)}
+footer .replay{margin-top:18px;font:inherit;font-size:14px;color:var(--olive);background:var(--paper);border:1px solid var(--gold);border-radius:999px;padding:8px 18px;cursor:pointer}
+footer .replay [lang="hi"]{font-family:var(--hindi)}
+footer .replay:hover{background:var(--petal)}
+footer .flogo{width:80px;margin:0 auto 6px;display:block}
+
+
+.slide .en{font-family:var(--display)}
+.slide h3.en{font-family:var(--display);font-weight:600;font-size:26px}
+.slide ul.en{font-size:17px;line-height:1.75}
+.slide ul.small.en{font-size:15px}
+.slide .poem.en,.slide .sub.en{font-family:var(--display);font-style:italic;font-size:17px}
+.slide .kids.en{font-family:var(--display);font-size:16.5px}
+.slide>div{display:flex;flex-direction:column;gap:6px}
+/* ---------- scroll reveal (content is visible at rest; it only lifts in) ---------- */
+.reveal.in{animation:lift .8s ease both}
+@keyframes lift{from{transform:translateY(22px);opacity:.35}to{transform:none;opacity:1}}
+.fam .side{transition:transform .35s ease, box-shadow .35s ease}
+.fam .side:hover{transform:translateY(-4px) rotate(-.4deg);box-shadow:0 12px 26px rgba(201,114,127,.18)}
+.count b{transition:transform .3s}
+.count b.bump{transform:scale(1.12)}
+@media (prefers-reduced-motion:reduce){.door,.gate-mid,#env,.gate{transition:none!important;animation:none!important}body.entering .hero{animation:none}}
+
+/* ---------- music ---------- */
+.music{position:fixed;right:calc(14px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:40;width:52px;height:52px;border-radius:50%;border:2px solid #f2c7a8;cursor:pointer;
+  background:radial-gradient(circle at 35% 30%,#b8473d,#8b2a24 70%);color:#fff3e8;display:grid;place-items:center;box-shadow:0 8px 20px rgba(110,35,25,.35);
+  opacity:0;transform:scale(.6);pointer-events:none;transition:opacity .5s ease,transform .5s cubic-bezier(.3,1.5,.5,1)}
+.music.show{opacity:1;transform:none;pointer-events:auto}
+.music::before{content:"";position:absolute;inset:-6px;border-radius:50%;border:1.5px solid rgba(201,139,110,.6);opacity:0}
+.music.playing::before{animation:ring 2.4s ease-out infinite}
+@keyframes ring{from{transform:scale(.9);opacity:.9}to{transform:scale(1.35);opacity:0}}
+.music .bars{display:flex;align-items:flex-end;gap:3px;height:18px}
+.music .bars i{width:3px;height:6px;background:currentColor;border-radius:2px}
+.music.playing .bars i{animation:eq 1s ease-in-out infinite}
+.music.playing .bars i:nth-child(2){animation-delay:-.4s}.music.playing .bars i:nth-child(3){animation-delay:-.7s}.music.playing .bars i:nth-child(4){animation-delay:-.2s}
+@keyframes eq{0%,100%{height:5px}50%{height:18px}}
+.music .play{display:none;width:0;height:0;border-left:15px solid currentColor;border-top:9px solid transparent;border-bottom:9px solid transparent;margin-left:4px}
+.music:not(.playing) .bars{display:none}.music:not(.playing) .play{display:block}
+.music .tip{position:absolute;right:62px;white-space:nowrap;font-size:12.5px;background:var(--paper);color:var(--olive);border:1px solid var(--gold);border-radius:999px;padding:4px 10px;opacity:0;transition:opacity .4s}
+.music.hint .tip{opacity:1}
+</style>
+</head>
+<body>
+
+<div id="env">
+  <div class="gate">
+    <div class="doors"><img class="peek" src="palace_art.jpg" alt=""><div class="door l" aria-hidden="true"><span class="arc"></span><span class="pan"></span><span class="ring"></span></div><div class="door r" aria-hidden="true"><span class="arc"></span><span class="pan"></span><span class="ring"></span></div></div>
+    <img class="frame" src="gate_frame.png" alt="">
+    <img class="gate-roses a" src="roses.png" alt="">
+    <img class="gate-roses b" src="roses.png" alt="">
+    <div class="gate-mid">
+      <div class="gm">।। श्री गणेशाय नमः ।।</div>
+      <div class="seal"><img src="cartouche.png" alt=""><img class="logo" src="logo_maroon.png" alt="Akshay and Pooja monogram"></div>
+      <div class="nm">अक्षय <span class="amp">&amp;</span> पूजा</div>
+      <div class="dt">12 दिसंबर 2026 · नागदा</div>
+      <button class="tapbtn" id="envelope" type="button" aria-label="Open the gate to the invitation"><span>द्वार खोलें</span><small>Tap to open</small></button>
+    </div>
+  </div>
+</div>
+<audio id="song" src="song.mp3" loop preload="auto"></audio>
+<button type="button" class="music" id="music" aria-label="Pause music" aria-pressed="true"><span class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="play" aria-hidden="true"></span><span class="tip t"><span lang="hi">संगीत रोकें</span><span lang="en">Pause music</span></span></button>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<div class="lang" role="group" aria-label="Language">
+  <button type="button" id="lang-hi" aria-pressed="true">हिंदी</button>
+  <button type="button" id="lang-en" aria-pressed="false">English</button>
+</div>
+
+<header class="hero">
+  <div class="wrap inner">
+    <div class="ganesh"><div class="gm">।। श्री गणेशाय नमः ।।</div><div class="sl">वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।<br>निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥</div></div>
+    <div class="scene"><img src="palace_art.jpg" alt="Watercolour garden palace with the Akshay and Pooja monogram"></div>
+    <div class="hcard arch">
+      <div class="t"><div class="kicker" lang="en">The Wedding of</div><div class="kicker" lang="hi">।। शुभ विवाह ।।</div></div>
+      <h1 class="t"><span lang="en">Akshay<span class="amp">&amp;</span>Pooja</span><span lang="hi">अक्षय <span class="amp">&amp;</span> पूजा</span></h1>
+      <div class="date t"><span lang="en">Saturday · 12 December 2026</span><span lang="hi">शनिवार, 12 दिसंबर 2026</span></div>
+      <div class="place t"><span lang="en">Geeta Shree Garden, Nagda</span><span lang="hi">गीता श्री गार्डन, नागदा</span></div>
+      <div class="count" id="count" aria-live="polite">
+        <div><b id="cd-d">--</b><span class="t"><span lang="en">Days</span><span lang="hi">दिन</span></span></div>
+        <div><b id="cd-h">--</b><span class="t"><span lang="en">Hours</span><span lang="hi">घंटे</span></span></div>
+        <div><b id="cd-m">--</b><span class="t"><span lang="en">Minutes</span><span lang="hi">मिनट</span></span></div>
+        <div><b id="cd-s">--</b><span class="t"><span lang="en">Seconds</span><span lang="hi">सेकंड</span></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="invite">
+  <div class="wrap">
+    <div class="head t">
+      <div class="script" lang="en">with joy</div><div class="script" lang="hi">सादर आमंत्रण</div>
+      <h2><span lang="en">You are invited</span><span lang="hi">आप सपरिवार आमंत्रित हैं</span></h2>
+      <img class="divider" src="divider.png" alt="">
+    </div>
+    <div class="invite t reveal">
+      <p lang="en">With the blessings of God and our elders, the Mandowara family warmly invites you and your family to celebrate the marriage of</p>
+      <p lang="hi">उत्सव हो जीवन का हर पल, शुभ सागर हो प्यार<br>दर्शन शुभचिंतक जन का हो, शुभ प्रद हो सारा संसार,<br><b style="color:var(--rose)">प्रसंग है</b></p>
+      <div class="fam">
+        <div class="side arch">
+          <div class="role" lang="en">The Groom</div><div class="role" lang="hi">वर</div>
+          <div class="nm" lang="en">Akshay</div><div class="nm" lang="hi">चि. अक्षय</div>
+          <div class="rel" lang="en">Grandson of Late Smt. Radha Bai &amp; Late Shri Rambilas ji Mandowara<br>Son of Smt. Renu &amp; Shri Satish Mandowara<br>Mahidpur Road</div>
+          <div class="rel" lang="hi">सुपौत्र – स्व. श्रीमती राधा बाई – स्व. श्री रामबिलास जी मंडोवरा<br>सुपुत्र – श्रीमती रेणु – श्री सतीश मंडोवरा<br>महिदपुर रोड</div>
+        </div>
+        <div class="and" aria-hidden="true">&amp;</div>
+        <div class="side arch">
+          <div class="role" lang="en">The Bride</div><div class="role" lang="hi">वधू</div>
+          <div class="nm" lang="en">Pooja</div><div class="nm" lang="hi">सौ. कां. पूजा</div>
+          <div class="rel" lang="en">Granddaughter of Smt. Subhadra Devi &amp; Shri Balkrishna ji Thepadiya<br>Daughter of Smt. Namita &amp; Shri Rajesh ji Thepadiya<br>Haasalpur</div>
+          <div class="rel" lang="hi">सुपौत्री – श्रीमती सुभद्रा देवी – श्री बालकृष्ण जी थेपड़िया<br>सुपुत्री – श्रीमती नमिता – श्री राजेश जी थेपड़िया<br>हासलपुर</div>
+        </div>
+      </div>
+      <p lang="hi" style="margin-top:18px"><b style="color:var(--rose)">के मंगल परिणय का</b><br>ईश्वर की कृपा से आई है यह शुभ घड़ी,<br>आपके आशीष से जुड़े प्रेम की यह कड़ी।</p>
+      <p lang="en" style="margin-top:18px">By God's grace this auspicious hour has come;<br>may your blessings bind this bond of love.</p>
+    </div>
+  </div>
+</section>
+
+<section id="events" class="band">
+  <div class="wrap">
+    <div class="head t">
+      <div class="script" lang="en">celebrations</div><div class="script" lang="hi">मांगलिक कार्यक्रम</div>
+      <h2><span lang="en">Three days of festivities</span><span lang="hi">तीन दिन के शुभ आयोजन</span></h2>
+      <img class="divider" src="divider.png" alt="">
+    </div>
+    <div class="tabs t" role="tablist" aria-label="Wedding days">
+      <button type="button" role="tab" id="tab-d10" aria-controls="d10" aria-selected="false"><span lang="hi">10 दिसंबर</span><span lang="en">10 Dec</span></button>
+      <button type="button" role="tab" id="tab-d11" aria-controls="d11" aria-selected="false"><span lang="hi">11 दिसंबर</span><span lang="en">11 Dec</span></button>
+      <button type="button" role="tab" id="tab-d12" aria-controls="d12" aria-selected="true"><span lang="hi">12 दिसंबर · विवाह</span><span lang="en">12 Dec · Wedding</span></button>
+    </div>
+    <div class="days">
+      <article class="day arch" id="d10" role="tabpanel">
+        <div class="cal t"><b>10</b><span lang="en">Dec · Thu</span><span lang="hi">दिसंबर · गुरुवार</span></div>
+        <ul class="t">
+          <li><span class="ev" lang="en">Mata Pujan</span><span class="ev" lang="hi">माता पूजन</span><span class="tm"><span lang="en">9:00 AM</span><span lang="hi">प्रातः 9 बजे</span></span></li>
+        </ul>
+        <div class="loc t"><span lang="en">From our home to Govindam Vatika</span><span lang="hi">निज निवास से गोविंदम वाटिका</span></div>
+      </article>
+      <article class="day arch" id="d11" role="tabpanel">
+        <div class="cal t"><b>11</b><span lang="en">Dec · Fri</span><span lang="hi">दिसंबर · शुक्रवार</span></div>
+        <ul class="t">
+          <li><span class="ev" lang="en">Ganesh Pujan</span><span class="ev" lang="hi">गणेश पूजन</span><span class="tm"><span lang="en">7:00 AM</span><span lang="hi">प्रातः 7 बजे</span></span></li>
+          <li><span class="ev" lang="en">Mayra</span><span class="ev" lang="hi">मायरा</span><span class="tm"><span lang="en">12:30 PM</span><span lang="hi">दोपहर 12:30 बजे</span></span></li>
+          <li><span class="ev" lang="en">Tilak &amp; Engagement</span><span class="ev" lang="hi">तिलक एवं सगाई</span><span class="tm"><span lang="en">3:00 PM</span><span lang="hi">दोपहर 3 बजे</span></span></li>
+          <li><span class="ev" lang="en">Sangeet Evening</span><span class="ev" lang="hi">संगीत संध्या</span><span class="tm"><span lang="en">8:00 PM</span><span lang="hi">शाम 8 बजे</span></span></li>
+        </ul>
+        <div class="loc t"><span lang="en">Geeta Shree Garden, Nagda</span><span lang="hi">गीता श्री गार्डन, नागदा</span></div>
+      </article>
+      <article class="day main arch" id="d12" role="tabpanel">
+        <div class="cal t"><b>12</b><span lang="en">Dec · Sat</span><span lang="hi">दिसंबर · शनिवार</span></div>
+        <ul class="t">
+          <li><span class="ev" lang="en">Baraat (Nikasi)</span><span class="ev" lang="hi">बारात (निकासी)</span><span class="tm"><span lang="en">9:00 AM</span><span lang="hi">प्रातः 9 बजे</span></span></li>
+          <li><span class="ev" lang="en">Ashirwad Samaroh &amp; Lunch</span><span class="ev" lang="hi">आशीर्वाद समारोह एवं प्रीतिभोज</span><span class="tm"><span lang="en">from 12:15 PM</span><span lang="hi">दोपहर 12:15 बजे से</span></span></li>
+          <li><span class="ev big" lang="en">Panigrahan (Pheras)</span><span class="ev big" lang="hi">पाणिग्रहण संस्कार</span><span class="tm"><span lang="en">3:15 PM</span><span lang="hi">दोपहर 3:15 बजे</span></span></li>
+        </ul>
+        <div class="loc t"><span lang="en">Geeta Shree Garden, Mahidpur Road Marg, Nagda Jn.</span><span lang="hi">गीता श्री गार्डन, महिदपुर रोड मार्ग, नागदा जं.</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="wrap">
+    <div class="head t">
+      <div class="script" lang="en">where</div><div class="script" lang="hi">स्थान</div>
+      <h2><span lang="en">The Venue</span><span lang="hi">विवाह स्थल</span></h2>
+      <img class="divider" src="divider.png" alt="">
+    </div>
+    <div class="venue t reveal arch">
+      <div class="vn" lang="en">Geeta Shree Garden</div><div class="vn" lang="hi">गीता श्री गार्डन</div>
+      <div lang="en">Mahidpur Road Marg, Nagda Jn. (M.P.)</div><div lang="hi">महिदपुर रोड मार्ग, नागदा जं. (म.प्र.)</div>
+      <a class="btn" href="https://maps.app.goo.gl/siKAYrTztkQmcuAr9" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>
+        <span lang="en">Open in Google Maps</span><span lang="hi">गूगल मैप्स पर देखें</span></a>
+      <div class="home"><span lang="en">Family home: Radha Villa, Nagda Tiraha, Mahidpur Road, Dist. Ujjain (M.P.) 456440</span><span lang="hi">निवास: राधा विला, नागदा तिराहा, महिदपुर रोड, जिला उज्जैन (म.प्र.) 456440</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="family" class="band">
+  <div class="wrap">
+    <div class="head t">
+      <div class="script" lang="en">our families</div><div class="script" lang="hi">स्वागतकर्ता</div>
+      <h2><span lang="en">Waiting to welcome you</span><span lang="hi">आपके स्वागत में</span></h2>
+      <img class="divider" src="divider.png" alt="">
+    </div>
+    <div class="slider" aria-roledescription="carousel" aria-label="Families">
+      <div class="track" id="track">
+        <div class="slide arch t" role="group" aria-label="1 of 3">
+          <div lang="hi"><h3>विनीत</h3>
+          <ul><li><b>रेणु – सतीश मंडोवरा</b></li><li><b>ईशा – शुभम् मंडोवरा</b></li><li><b>हितिशा मंडोवरा</b></li></ul>
+          <hr><h3>स्वागतातुर</h3><div class="sub">सत्कार प्रवृत्त</div><ul><li>इन्दु – राजेन्द्र मंडोवरा</li><li>ममता – दिनेश मंडोवरा</li><li>सरिता – विजय मंडोवरा</li><li>ज्योति – संजय मंडोवरा</li><li>चंचल – पंकज मंडोवरा</li><li>निधि – प्रियेश मंडोवरा</li><li>स्वाति – कपिल मंडोवरा</li><li>अपर्णा – विवेक मंडोवरा</li><li>रिया – विनीत मंडोवरा</li><li>प्रिया – पुनीत मंडोवरा</li><li>सलोनी – अमन मंडोवरा</li></ul></div>
+          <div lang="en"><h3 class="en">With Humility</h3>
+          <ul class="en"><li><b>Renu – Satish Mandowara</b></li><li><b>Isha – Shubham Mandowara</b></li><li><b>Hitisha Mandowara</b></li></ul>
+          <hr><h3 class="en">Eager to Welcome You</h3><div class="sub en">Your hosts</div><ul class="en"><li>Indu – Rajendra Mandowara</li><li>Mamta – Dinesh Mandowara</li><li>Sarita – Vijay Mandowara</li><li>Jyoti – Sanjay Mandowara</li><li>Chanchal – Pankaj Mandowara</li><li>Nidhi – Priyesh Mandowara</li><li>Swati – Kapil Mandowara</li><li>Aparna – Vivek Mandowara</li><li>Riya – Vineet Mandowara</li><li>Priya – Puneet Mandowara</li><li>Saloni – Aman Mandowara</li></ul></div>
+        </div>
+        <div class="slide arch t" role="group" aria-label="2 of 3">
+          <div lang="hi"><h3>भाव भवज्ञ</h3><ul><li><b>सीताबाई मंडोवरा</b></li><li><b>एवं परिवार जन</b></li></ul>
+          <hr><h3>स्वागतकांक्षी</h3><ul><li>मोहता परिवार, नागदा</li><li>मधु – मनोहरलाल जी राठी (सोनकच्छ)</li><li>कुसुम – पुरुषोत्तम जी मंत्री (तराना)</li><li>सुहानी – विवेक जी सोमानी (सिराली)</li><li>दीपिका – तुषार जी सोडानी (महू)</li><li>रुपल – अभिषेक जी लढ्ढा (रामगंजमण्डी)</li><li>प्रिया – जतिन जी चौखड़ा (सारंगपुर)</li></ul></div>
+          <div lang="en"><h3 class="en">With Heartfelt Love</h3><ul class="en"><li><b>Sitabai Mandowara</b></li><li><b>and the entire family</b></li></ul>
+          <hr><h3 class="en">Awaiting Your Presence</h3><ul class="en"><li>Mohta Family, Nagda</li><li>Madhu – Manoharlal ji Rathi (Sonkatch)</li><li>Kusum – Purushottam ji Mantri (Tarana)</li><li>Suhani – Vivek ji Somani (Sirali)</li><li>Deepika – Tushar ji Sodani (Mhow)</li><li>Rupal – Abhishek ji Laddha (Ramganj Mandi)</li><li>Priya – Jatin ji Chaukhada (Sarangpur)</li></ul></div>
+        </div>
+        <div class="slide arch t" role="group" aria-label="3 of 3">
+          <div lang="hi"><h3>प्रतिष्ठान</h3><ul class="small"><li>दिनेश जनरल स्टोर्स, महिदपुर रोड – <span class="ph">9893434132</span></li><li>माहेश्वरी इलेक्ट्रॉनिक्स, महिदपुर रोड – <span class="ph">9893194758</span></li><li>दिनेश मंडोवरा (पत्रकार दैनिक भास्कर), महिदपुर रोड – <span class="ph">9893194758</span></li><li>अक्षय इलेक्ट्रिकल्स, महिदपुर रोड – <span class="ph">9755618365</span></li><li>अक्षय इलेक्ट्रिकल्स 2.0, महिदपुर रोड – <span class="ph">8085234432</span></li><li>माहेश्वरी गिफ्ट गैलेक्सी, महिदपुर रोड – <span class="ph">9893740262</span></li><li>विजय ट्रेडर्स, महिदपुर रोड – <span class="ph">9893245652</span></li><li>शुभम् कृषि सेवा केन्द्र, महिदपुर रोड – <span class="ph">9893863652</span></li><li>पर्ल फैशन अपैरल बुटिक, महिदपुर रोड – <span class="ph">9039523552</span></li></ul>
+          <hr><h3>बाल मनुहार</h3>
+          <div class="poem">फूलों सी मुस्कान लिए, नन्हे मुख पर प्यार,<br>बाल सखा सब विनती करते, पधारो जी आप सपरिवार।</div>
+          <div class="sub">मेरे चाचा की शादी में ज़रूर-ज़रूर आना</div>
+          <div class="kids"><b>नयन, आँचल, आरव, नित्या, नव्या, रिध्वी, नायशा, हितिशा, धैर्या, कृधा, हित्वी, सलोनी, राघव, केशव, खुशबू</b></div></div>
+          <div lang="en"><h3 class="en">Family Businesses</h3><ul class="small en"><li>Dinesh General Stores, Mahidpur Road – <span class="ph">9893434132</span></li><li>Maheshwari Electronics, Mahidpur Road – <span class="ph">9893194758</span></li><li>Dinesh Mandowara (Journalist, Dainik Bhaskar), Mahidpur Road – <span class="ph">9893194758</span></li><li>Akshay Electricals, Mahidpur Road – <span class="ph">9755618365</span></li><li>Akshay Electricals 2.0, Mahidpur Road – <span class="ph">8085234432</span></li><li>Maheshwari Gift Galaxy, Mahidpur Road – <span class="ph">9893740262</span></li><li>Vijay Traders, Mahidpur Road – <span class="ph">9893245652</span></li><li>Shubham Krishi Seva Kendra, Mahidpur Road – <span class="ph">9893863652</span></li><li>Pearl Fashion Apparel Boutique, Mahidpur Road – <span class="ph">9039523552</span></li></ul>
+          <hr><h3 class="en">A Request from the Little Ones</h3>
+          <div class="poem en">With flower-like smiles and love on every little face,<br>all the children request – please come with your family!</div>
+          <div class="sub en">Do come to our Chacha's wedding!</div>
+          <div class="kids en"><b>Nayan, Aanchal, Aarav, Nitya, Navya, Ridhvi, Naysha, Hitisha, Dhairya, Kridha, Hitvi, Saloni, Raghav, Keshav, Khushbu</b></div></div>
+        </div>
+      </div>
+      <div class="snav">
+        <button class="arrow" type="button" id="s-prev" aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <div class="dots" id="s-dots"><button type="button" aria-label="Slide 1" aria-current="true"></button><button type="button" aria-label="Slide 2"></button><button type="button" aria-label="Slide 3"></button></div>
+        <button class="arrow" type="button" id="s-next" aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+      <div class="swipe t"><span lang="hi">← स्वाइप करें →</span><span lang="en">← swipe →</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="head t">
+      <div class="script" lang="en">get in touch</div><div class="script" lang="hi">संपर्क</div>
+      <h2><span lang="en">For any help</span><span lang="hi">संपर्क सूत्र</span></h2>
+      <img class="divider" src="divider.png" alt="">
+    </div>
+    <div class="contacts reveal">
+      <div class="person t arch"><div class="pn" lang="en">Satish Mandowara</div><div class="pn" lang="hi">सतीश मंडोवरा</div>
+        <div class="ph" id="ph1">+91 97556 18365</div><button class="copy" type="button" data-copy="ph1"><span lang="en">Copy number</span><span lang="hi">नंबर कॉपी करें</span></button></div>
+      <div class="person t arch"><div class="pn" lang="en">Shubham Mandowara</div><div class="pn" lang="hi">शुभम् मंडोवरा</div>
+        <div class="ph" id="ph2">+91 80852 34432</div><button class="copy" type="button" data-copy="ph2"><span lang="en">Copy number</span><span lang="hi">नंबर कॉपी करें</span></button></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap t">
+    <img class="flogo" src="logo_maroon.png" alt="">
+    <div class="script" lang="en">with love</div><div class="script" lang="hi">आपके आगमन की प्रतीक्षा में</div>
+    <p lang="hi">हम इस खास मौके को आपके साथ मनाने और प्यारी यादें बनाने के लिए उत्सुक हैं।</p>
+    <p lang="en">We look forward to celebrating this special day with you.</p>
+    <p lang="en">Renu – Satish Mandowara · Isha – Shubham Mandowara · Hitisha Mandowara</p>
+    <p lang="hi">रेणु – सतीश मंडोवरा · ईशा – शुभम् मंडोवरा · हितिशा मंडोवरा</p>
+    <button type="button" class="replay" id="replay"><span lang="hi">↺ द्वार फिर से खोलें</span><span lang="en">↺ Open the gate again</span></button>
+  </div>
+  <div class="roses2" aria-hidden="true"><img src="roses.png" alt=""><img src="roses.png" alt=""></div>
+</footer>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  function setLang(l){
+    root.setAttribute('data-lang',l);
+    document.getElementById('lang-en').setAttribute('aria-pressed',l==='en');
+    document.getElementById('lang-hi').setAttribute('aria-pressed',l==='hi');
+    try{localStorage.setItem('ap-lang',l)}catch(e){}
+  }
+  var saved='hi'; try{saved=localStorage.getItem('ap-lang')||'hi'}catch(e){}
+  setLang(saved);
+  document.getElementById('lang-en').onclick=function(){setLang('en')};
+  document.getElementById('lang-hi').onclick=function(){setLang('hi')};
+
+  // countdown to the pheras, 12 Dec 2026 3:15 PM IST
+  var target=Date.parse('2026-12-12T15:15:00+05:30');
+  function tick(){
+    var ms=Math.max(0,target-Date.now());
+    var d=Math.floor(ms/864e5), h=Math.floor(ms%864e5/36e5), m=Math.floor(ms%36e5/6e4);
+    document.getElementById('cd-d').textContent=d;
+    document.getElementById('cd-h').textContent=String(h).padStart(2,'0');
+    var mm=String(m).padStart(2,'0'), ss=String(Math.floor(ms%6e4/1e3)).padStart(2,'0');
+    var em=document.getElementById('cd-m'); if(em.textContent!==mm){em.textContent=mm;em.classList.add('bump');setTimeout(function(){em.classList.remove('bump')},300)}
+    document.getElementById('cd-s').textContent=ss;
+  }
+  tick(); setInterval(tick,1000);
+
+  // RSVP -> WhatsApp
+  var form=document.getElementById('rsvp-form'), err=document.getElementById('r-err');
+  if(form)form.addEventListener('submit',function(e){
+    e.preventDefault();
+    var name=document.getElementById('r-name').value.trim();
+    var hi=root.getAttribute('data-lang')==='hi';
+    if(!name){err.textContent=hi?'कृपया अपना नाम लिखें।':'Please enter your name so the family knows who is coming.';err.hidden=false;document.getElementById('r-name').focus();return}
+    err.hidden=true;
+    var days=[].slice.call(form.querySelectorAll('.checks input:checked')).map(function(i){return i.value});
+    var n=document.getElementById('r-count').value;
+    var msg='Namaste! RSVP for Akshay & Pooja\'s wedding\nName: '+name+'\nGuests: '+n+'\nAttending: '+(days.length?days.join(', '):'Not sure yet');
+    var a=document.createElement('a'); a.href='https://wa.me/919755618365?text='+encodeURIComponent(msg); a.target='_blank'; a.rel='noopener';
+    document.body.appendChild(a); a.click(); a.remove();
+  });
+
+  // copy buttons
+  [].forEach.call(document.querySelectorAll('[data-copy]'),function(b){
+    b.addEventListener('click',function(){
+      var el=document.getElementById(b.getAttribute('data-copy')), txt=el.textContent;
+      var done=function(){var o=b.innerHTML;b.textContent=root.getAttribute('data-lang')==='hi'?'कॉपी हो गया':'Copied';setTimeout(function(){b.innerHTML=o},1500)};
+      if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done,function(){sel(el)})}else sel(el);
+    });
+  });
+  function sel(el){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r)}
+  // palace doors
+  var env=document.getElementById('env'), envBtn=document.getElementById('envelope');
+  document.body.classList.add('locked');
+
+  // background song: starts with the tap that opens the gate
+  var song=document.getElementById('song'), mbtn=document.getElementById('music'), wantPlay=true, fadeT;
+  function setUI(on){mbtn.classList.toggle('playing',on);mbtn.setAttribute('aria-pressed',on);mbtn.setAttribute('aria-label',on?'Pause music':'Play music');
+    var tip=mbtn.querySelector('.tip');tip.innerHTML=on?'<span lang="hi">संगीत रोकें</span><span lang="en">Pause music</span>':'<span lang="hi">संगीत चलाएँ</span><span lang="en">Play music</span>'}
+  var actx=null, gain=null;
+  function audioSetup(){if(actx)return;var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+    try{actx=new AC();var srcN=actx.createMediaElementSource(song);gain=actx.createGain();gain.gain.value=0;srcN.connect(gain);gain.connect(actx.destination)}catch(e){actx=null;gain=null}}
+  function fadeTo(v,ms,done){clearInterval(fadeT);clearTimeout(fadeT);
+    if(gain){if(actx.state==='suspended')actx.resume();var t=actx.currentTime,g=gain.gain;g.cancelScheduledValues(t);g.setValueAtTime(g.value,t);g.linearRampToValueAtTime(v,t+ms/1000);fadeT=setTimeout(function(){done&&done()},ms+40);return}
+    var st=song.volume,t0=Date.now();fadeT=setInterval(function(){var k=Math.min(1,(Date.now()-t0)/ms);k=k*k*(3-2*k);song.volume=st+(v-st)*k;if(k>=1){clearInterval(fadeT);done&&done()}},30)}
+  function playSong(){audioSetup();song.volume=gain?1:0;var pr=song.play();if(pr&&pr.catch)pr.catch(function(){setUI(false)});setUI(true);fadeTo(.85,3000)}
+  function pauseSong(){setUI(false);fadeTo(0,1800,function(){song.pause()})}
+  mbtn.addEventListener('click',function(){wantPlay=song.paused||!mbtn.classList.contains('playing');wantPlay?playSong():pauseSong()});
+  document.addEventListener('visibilitychange',function(){if(document.hidden){if(!song.paused){song.pause()}}else if(wantPlay&&mbtn.classList.contains('show')&&mbtn.classList.contains('playing')){song.play().catch(function(){})}});
+  function startMusic(){if(!mbtn.classList.contains('show')){mbtn.classList.add('show');setTimeout(function(){mbtn.classList.add('hint');setTimeout(function(){mbtn.classList.remove('hint')},3500)},5200)}if(wantPlay&&song.paused)playSong()}
+  function openGate(){
+    if(env.classList.contains('open'))return;
+    startMusic();
+    window.scrollTo(0,0); env.classList.add('open');
+    var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var inner=document.querySelector('.hero .inner'), scene=inner.querySelector('.scene');
+    function rise(start){[].forEach.call(inner.children,function(c,i){if(c===scene)return;c.style.animation='none';c.offsetWidth;c.style.animation='rise 1.1s cubic-bezier(.2,.7,.2,1) '+(start+i*0.15)+'s both'})}
+    if(reduce){env.classList.add('gone');document.body.classList.remove('locked');return}
+    setTimeout(function(){
+      // the doorway image as it sits on screen right now (square art, cover-fitted into the door box)
+      var pk=env.querySelector('.peek').getBoundingClientRect(), side=pk.height, sx=pk.left+pk.width/2-side/2, sy=pk.top;
+      document.body.classList.add('entering'); document.body.classList.remove('locked');
+      var t=scene.getBoundingClientRect(), k=side/t.width;
+      var fly=document.createElement('div'); fly.id='fly';
+      fly.innerHTML='<div class="ph"><img src="palace_art.jpg" alt=""></div>';
+      var ph=fly.firstChild; ph.style.cssText='left:'+t.left+'px;top:'+t.top+'px;width:'+t.width+'px;height:'+t.height+'px';
+      document.body.appendChild(fly);
+      env.classList.add('gone');
+      var from='translate('+(sx-t.left)+'px,'+(sy-t.top)+'px) scale('+k+')';
+      var anim=ph.animate([
+        {transform:from,borderRadius:'0 0 0 0 / 0 0 0 0',boxShadow:'0 0 0 0 rgba(0,0,0,0)',offset:0},
+        {transform:from,borderRadius:'0 0 0 0 / 0 0 0 0',boxShadow:'0 0 0 0 rgba(0,0,0,0)',offset:.12},
+        {transform:'translate(0,0) scale(1)',borderRadius:'48% 48% 16px 16px / 30% 30% 16px 16px',boxShadow:'0 0 0 5px #fff8f2,0 0 0 7px #c98b6e,0 22px 46px rgba(150,80,60,.22)'}
+      ],{duration:2300,easing:'cubic-bezier(.55,0,.2,1)',fill:'forwards'});
+      rise(1.1);
+      setTimeout(function(){burst(50)},1500);
+      anim.onfinish=function(){document.body.classList.remove('entering');requestAnimationFrame(function(){fly.remove()})};
+    },2850);
+  }
+
+  envBtn.addEventListener('click',openGate);
+  document.getElementById('replay').addEventListener('click',function(){
+    var f=document.getElementById('fly'); if(f)f.remove();
+    document.body.classList.remove('entering'); document.body.classList.add('locked');
+    env.classList.remove('open','gone'); void env.offsetWidth;
+    [].forEach.call(document.querySelectorAll('.hero .inner>*'),function(c){c.style.animation=''});
+    window.scrollTo(0,0);
+  });
+  [].forEach.call(document.querySelectorAll('.door'),function(d){d.addEventListener('click',openGate)});
+
+  // family slider
+  (function(){
+    var tr=document.getElementById('track'); if(!tr)return;
+    var dots=[].slice.call(document.querySelectorAll('#s-dots button')), prev=document.getElementById('s-prev'), next=document.getElementById('s-next'), cur=0, timer;
+    function go(i){i=Math.max(0,Math.min(dots.length-1,i)); cur=i; var sl=tr.children[i]; tr.scrollTo({left:sl.offsetLeft-tr.offsetLeft-6,behavior:'smooth'})}
+    function sync(){var w=tr.children[0].offsetWidth+16; cur=Math.round(tr.scrollLeft/w);
+      dots.forEach(function(d,k){d.setAttribute('aria-current',k===cur)}); prev.disabled=cur===0; next.disabled=cur===dots.length-1}
+    tr.addEventListener('scroll',function(){clearTimeout(tr._t);tr._t=setTimeout(sync,60)});
+    prev.onclick=function(){stop();go(cur-1)}; next.onclick=function(){stop();go(cur+1)};
+    dots.forEach(function(d,k){d.onclick=function(){stop();go(k)}});
+    ['touchstart','wheel','pointerdown'].forEach(function(ev){tr.addEventListener(ev,stop,{passive:true})});
+    function stop(){clearInterval(timer)}
+    if(!(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)){
+      timer=setInterval(function(){var r=tr.getBoundingClientRect(); if(r.top<innerHeight&&r.bottom>0) go(cur===dots.length-1?0:cur+1)},6000);
+    }
+    sync();
+  })();
+
+  // day tabs
+  var tabs=[].slice.call(document.querySelectorAll('.tabs [role=tab]'));
+  function show(id){tabs.forEach(function(t){var on=t.getAttribute('aria-controls')===id;t.setAttribute('aria-selected',on);
+      document.getElementById(t.getAttribute('aria-controls')).hidden=!on})}
+  tabs.forEach(function(t){t.addEventListener('click',function(){show(t.getAttribute('aria-controls'))})});
+  show('d12');
+
+  // scroll reveal
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+    [].forEach.call(document.querySelectorAll('.reveal'),function(el){io.observe(el)});
+  }
+
+  // falling petals
+  var cv=document.getElementById('petals'), cx=cv.getContext('2d'), P=[], W=0, H=0, dpr=Math.min(2,window.devicePixelRatio||1);
+  var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
+  size(); addEventListener('resize',size);
+  var cols=['rgba(243,178,186,.85)','rgba(232,160,150,.8)','rgba(250,214,200,.9)','rgba(214,150,120,.7)'];
+  function mk(y){return {x:Math.random()*W,y:y==null?-20:y,r:4+Math.random()*5,vy:.35+Math.random()*.6,vx:-.3+Math.random()*.6,a:Math.random()*6.28,va:-.02+Math.random()*.04,ph:Math.random()*6.28,c:cols[Math.random()*cols.length|0]}}
+  function burst(n){for(var i=0;i<n;i++){var p=mk(H*.45);p.x=W/2+(Math.random()-.5)*120;p.vy=-1.5-Math.random()*2;p.vx=(Math.random()-.5)*3;P.push(p)}}
+  if(!reduce){for(var i=0;i<16;i++)P.push(mk(Math.random()*H))}
+  function frame(t){
+    cx.clearRect(0,0,W,H);
+    if(!reduce&&P.length<22&&Math.random()<.03)P.push(mk());
+    for(var i=P.length-1;i>=0;i--){var p=P[i];
+      p.vy=Math.min(p.vy+.03,1.1); p.x+=p.vx+Math.sin(t/900+p.ph)*.4; p.y+=p.vy; p.a+=p.va;
+      if(p.y>H+20){P.splice(i,1);continue}
+      cx.save();cx.translate(p.x,p.y);cx.rotate(p.a);cx.fillStyle=p.c;cx.beginPath();cx.ellipse(0,0,p.r,p.r*.6,0,0,6.283);cx.fill();cx.restore()}
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+})();
+</script>
+
+</body>
+</html>
