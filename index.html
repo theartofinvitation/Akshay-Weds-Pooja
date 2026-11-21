@@ -154,6 +154,7 @@ footer p{margin:6px 0;font-size:14px}
   .loc{grid-column:1}
 }
 @keyframes rise{from{transform:translateY(10px)}to{transform:none}}
+@keyframes risein{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @keyframes sway{0%,100%{transform:rotate(0)}50%{transform:rotate(1.2deg)}}
 .hero .inner>*{animation:rise .9s ease both}
 .spray.tl{transform-origin:0 0;animation:sway 7s ease-in-out infinite}
@@ -165,28 +166,28 @@ footer p{margin:6px 0;font-size:14px}
   transition:opacity .45s ease, visibility 0s linear .45s}
 #env.gone{opacity:0;visibility:hidden;pointer-events:none}
 /* walk-through: doors swing, camera moves forward through the doorway to the monogram */
-.gate{transform-origin:50% 52%;will-change:transform;transition:filter .6s ease}
-#env.open .gate{filter:none;animation:walkin 2.5s cubic-bezier(.45,0,.3,1) .3s both}
+.gate{transform-origin:50% 52%;will-change:transform;backface-visibility:hidden}
+#env.open .gate{animation:walkin 2.5s cubic-bezier(.45,0,.3,1) .3s both}
 @keyframes walkin{from{transform:scale(1)}to{transform:scale(5.4)}}
 /* one continuous image flies from the zoomed doorway back into its place on the page */
 #fly{position:fixed;inset:0;z-index:60;pointer-events:none;overflow:hidden}
-#fly .ph{position:absolute;overflow:hidden;transform-origin:0 0;will-change:transform,border-radius}
+#fly .ph{position:absolute;overflow:hidden;transform-origin:0 0;will-change:transform;backface-visibility:hidden;border-radius:48% 48% 16px 16px / 30% 30% 16px 16px;box-shadow:0 0 0 5px #fff8f2,0 0 0 7px #c98b6e}
 #fly .ph img{width:100%;height:100%;display:block}
 body.locked .hero .inner>*{opacity:0}
 body.entering .hero .scene{visibility:hidden}
 body.entering .hero .scene img{animation:none}
 body.entering .hero .hcard{z-index:61}
-.gate{position:relative;width:min(92vw,calc(88vh * .645),560px);aspect-ratio:800/1240;filter:drop-shadow(0 18px 30px rgba(140,70,50,.25))}
+.gate{position:relative;width:min(92vw,calc(88vh * .645),560px);aspect-ratio:800/1240}
 .gate .frame{position:absolute;inset:0;width:100%;height:100%;z-index:3;pointer-events:none}
 .doors{position:absolute;left:10.250%;top:7.976%;width:79.500%;height:82.992%;z-index:2;perspective:1400px}
 .doors .peek{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:polygon(0.00% 100.00%,0.86% 23.40%,0.65% 22.20%,0.82% 21.35%,1.10% 20.66%,1.41% 20.07%,1.76% 19.55%,2.17% 19.09%,2.63% 18.69%,3.13% 18.33%,3.68% 18.02%,4.26% 17.76%,4.87% 17.52%,5.49% 17.32%,6.12% 17.15%,6.35% 16.84%,6.31% 16.44%,6.31% 16.05%,6.34% 15.68%,6.41% 15.33%,6.52% 14.99%,6.66% 14.68%,6.83% 14.38%,7.03% 14.09%,7.25% 13.82%,7.50% 13.57%,7.76% 13.33%,8.03% 13.11%,8.32% 12.89%,8.62% 12.68%,8.92% 12.48%,9.22% 12.29%,9.52% 12.10%,9.84% 11.92%,10.15% 11.75%,10.48% 11.59%,10.82% 11.43%,11.17% 11.30%,11.53% 11.17%,11.90% 11.05%,12.28% 10.95%,12.68% 10.86%,13.08% 10.78%,13.49% 10.72%,13.91% 10.66%,14.34% 10.62%,14.77% 10.59%,15.21% 10.57%,15.65% 10.55%,16.10% 10.55%,16.31% 10.36%,16.45% 10.10%,16.59% 9.85%,16.75% 9.61%,16.92% 9.37%,17.10% 9.15%,17.29% 8.93%,17.50% 8.72%,17.71% 8.52%,17.94% 8.34%,18.17% 8.16%,18.42% 7.99%,18.67% 7.83%,18.93% 7.68%,19.20% 7.54%,19.48% 7.40%,19.76% 7.27%,20.05% 7.15%,20.35% 7.04%,20.64% 6.93%,20.94% 6.83%,21.24% 6.72%,21.54% 6.62%,21.85% 6.52%,22.15% 6.43%,22.46% 6.34%,22.77% 6.26%,23.08% 6.18%,23.40% 6.11%,23.72% 6.05%,24.05% 5.99%,24.38% 5.95%,24.72% 5.91%,25.07% 5.88%,25.41% 5.86%,25.76% 5.85%,26.12% 5.85%,26.48% 5.85%,26.84% 5.87%,27.21% 5.89%,27.58% 5.92%,27.95% 5.96%,28.33% 6.00%,28.70% 6.05%,29.08% 6.11%,29.33% 5.98%,29.54% 5.78%,29.75% 5.58%,29.97% 5.39%,30.20% 5.21%,30.43% 5.04%,30.66% 4.87%,30.90% 4.71%,31.15% 4.56%,31.40% 4.41%,31.66% 4.28%,31.92% 4.15%,32.19% 4.03%,32.46% 3.91%,32.74% 3.81%,33.02% 3.71%,33.30% 3.62%,33.59% 3.54%,33.88% 3.46%,34.18% 3.39%,34.47% 3.32%,34.77% 3.26%,35.07% 3.20%,35.37% 3.15%,35.67% 3.09%,35.97% 3.04%,36.27% 2.99%,36.58% 2.94%,36.88% 2.89%,37.19% 2.85%,37.49% 2.82%,37.80% 2.79%,38.12% 2.77%,38.43% 2.75%,38.75% 2.75%,39.07% 2.75%,39.39% 2.75%,39.71% 2.77%,40.04% 2.79%,40.36% 2.82%,40.69% 2.86%,41.02% 2.91%,41.36% 2.96%,41.69% 3.02%,42.03% 3.09%,42.36% 3.16%,42.70% 3.24%,43.04% 3.33%,43.38% 3.42%,43.68% 3.40%,43.94% 3.24%,44.20% 3.07%,44.46% 2.91%,44.73% 2.76%,45.01% 2.60%,45.29% 2.45%,45.58% 2.30%,45.87% 2.15%,46.16% 2.00%,46.45% 1.85%,46.73% 1.69%,47.01% 1.52%,47.28% 1.35%,47.54% 1.18%,47.81% 1.00%,48.07% 0.82%,48.34% 0.64%,48.62% 0.47%,48.91% 0.32%,49.20% 0.19%,49.50% 0.09%,49.80% 0.03%,50.10% 0.01%,50.40% 0.07%,50.70% 0.16%,50.99% 0.28%,51.28% 0.42%,51.56% 0.58%,51.84% 0.76%,52.11% 0.94%,52.37% 1.12%,52.63% 1.29%,52.90% 1.47%,53.17% 1.63%,53.46% 1.80%,53.74% 1.95%,54.03% 2.10%,54.33% 2.25%,54.61% 2.40%,54.90% 2.55%,55.18% 2.71%,55.45% 2.86%,55.72% 3.02%,55.98% 3.18%,56.23% 3.35%,56.51% 3.45%,56.85% 3.36%,57.19% 3.27%,57.52% 3.19%,57.86% 3.11%,58.20% 3.04%,58.53% 2.98%,58.87% 2.92%,59.20% 2.87%,59.53% 2.83%,59.86% 2.80%,60.18% 2.77%,60.51% 2.76%,60.83% 2.75%,61.15% 2.75%,61.46% 2.75%,61.78% 2.76%,62.09% 2.78%,62.40% 2.81%,62.71% 2.84%,63.02% 2.88%,63.32% 2.92%,63.63% 2.97%,63.93% 3.02%,64.23% 3.07%,64.53% 3.13%,64.83% 3.18%,65.13% 3.24%,65.43% 3.30%,65.72% 3.37%,66.02% 3.44%,66.31% 3.51%,66.60% 3.59%,66.89% 3.68%,67.17% 3.78%,67.45% 3.88%,67.72% 3.99%,67.99% 4.11%,68.25% 4.23%,68.51% 4.37%,68.77% 4.51%,69.01% 4.66%,69.26% 4.81%,69.49% 4.98%,69.73% 5.15%,69.95% 5.33%,70.17% 5.52%,70.39% 5.71%,70.60% 5.91%,70.81% 6.11%,71.17% 6.07%,71.55% 6.02%,71.92% 5.97%,72.30% 5.93%,72.67% 5.90%,73.03% 5.87%,73.40% 5.86%,73.76% 5.85%,74.12% 5.85%,74.47% 5.85%,74.82% 5.87%,75.16% 5.90%,75.50% 5.93%,75.84% 5.98%,76.17% 6.03%,76.49% 6.09%,76.81% 6.16%,77.13% 6.23%,77.44% 6.31%,77.75% 6.40%,78.05% 6.49%,78.36% 6.59%,78.66% 6.69%,78.96% 6.79%,79.26% 6.90%,79.56% 7.00%,79.85% 7.12%,80.14% 7.23%,80.43% 7.36%,80.71% 7.49%,80.98% 7.63%,81.24% 7.78%,81.50% 7.93%,81.75% 8.10%,81.99% 8.28%,82.22% 8.46%,82.43% 8.66%,82.64% 8.86%,82.84% 9.07%,83.02% 9.30%,83.19% 9.53%,83.35% 9.77%,83.50% 10.02%,83.64% 10.27%,83.77% 10.53%,84.20% 10.55%,84.64% 10.56%,85.08% 10.58%,85.52% 10.61%,85.95% 10.65%,86.37% 10.70%,86.79% 10.76%,87.19% 10.83%,87.59% 10.92%,87.97% 11.02%,88.35% 11.13%,88.71% 11.25%,89.06% 11.39%,89.41% 11.53%,89.74% 11.69%,90.06% 11.86%,90.37% 12.04%,90.68% 12.23%,90.98% 12.42%,91.28% 12.62%,91.58% 12.82%,91.87% 13.03%,92.15% 13.26%,92.42% 13.49%,92.67% 13.74%,92.90% 14.00%,93.11% 14.28%,93.29% 14.57%,93.44% 14.89%,93.55% 15.21%,93.64% 15.56%,93.68% 15.93%,93.69% 16.31%,93.67% 16.70%,93.66% 17.09%,94.30% 17.26%,94.92% 17.45%,95.54% 17.67%,96.13% 17.93%,96.69% 18.23%,97.21% 18.56%,97.68% 18.95%,98.11% 19.39%,98.48% 19.89%,98.80% 20.45%,99.09% 21.11%,99.32% 21.89%,99.29% 22.94%,97.49% 25.44%,100.00% 100.00%)}
-.door{position:absolute;top:0;bottom:0;width:50%;cursor:pointer;transition:transform 2.2s cubic-bezier(.45,0,.2,1) .15s, filter 2.2s ease .15s;
+.door{position:absolute;top:0;bottom:0;width:50%;cursor:pointer;transition:transform 2.2s cubic-bezier(.45,0,.2,1) .15s;will-change:transform;backface-visibility:hidden;
   background:linear-gradient(90deg,rgba(90,30,20,.10),transparent 14%,transparent 86%,rgba(90,30,20,.16)),url(damask.png),linear-gradient(180deg,#e7b49c,#cf8c73 70%,#c27e66);
   background-size:auto,110px 110px,auto}
 .door.l{left:0;transform-origin:left center;clip-path:polygon(0.00% 100.00%,1.71% 23.40%,1.29% 22.20%,1.64% 21.35%,2.20% 20.66%,2.83% 20.07%,3.53% 19.55%,4.34% 19.09%,5.25% 18.69%,6.27% 18.33%,7.36% 18.02%,8.52% 17.76%,9.74% 17.52%,10.98% 17.32%,12.25% 17.15%,12.70% 16.84%,12.62% 16.44%,12.62% 16.05%,12.69% 15.68%,12.83% 15.33%,13.04% 14.99%,13.32% 14.68%,13.66% 14.38%,14.06% 14.09%,14.50% 13.82%,14.99% 13.57%,15.52% 13.33%,16.07% 13.11%,16.65% 12.89%,17.24% 12.68%,17.84% 12.48%,18.44% 12.29%,19.05% 12.10%,19.67% 11.92%,20.31% 11.75%,20.96% 11.59%,21.64% 11.43%,22.34% 11.30%,23.06% 11.17%,23.80% 11.05%,24.57% 10.95%,25.35% 10.86%,26.16% 10.78%,26.98% 10.72%,27.82% 10.66%,28.67% 10.62%,29.54% 10.59%,30.42% 10.57%,31.30% 10.55%,32.19% 10.55%,32.62% 10.36%,32.90% 10.10%,33.19% 9.85%,33.51% 9.61%,33.84% 9.37%,34.20% 9.15%,34.59% 8.93%,34.99% 8.72%,35.42% 8.52%,35.87% 8.34%,36.34% 8.16%,36.83% 7.99%,37.34% 7.83%,37.87% 7.68%,38.41% 7.54%,38.96% 7.40%,39.53% 7.27%,40.11% 7.15%,40.69% 7.04%,41.29% 6.93%,41.88% 6.83%,42.48% 6.72%,43.09% 6.62%,43.69% 6.52%,44.30% 6.43%,44.91% 6.34%,45.54% 6.26%,46.16% 6.18%,46.80% 6.11%,47.45% 6.05%,48.10% 5.99%,48.77% 5.95%,49.45% 5.91%,50.13% 5.88%,50.82% 5.86%,51.53% 5.85%,52.24% 5.85%,52.96% 5.85%,53.69% 5.87%,54.42% 5.89%,55.16% 5.92%,55.91% 5.96%,56.65% 6.00%,57.41% 6.05%,58.16% 6.11%,58.66% 5.98%,59.08% 5.78%,59.51% 5.58%,59.95% 5.39%,60.40% 5.21%,60.86% 5.04%,61.33% 4.87%,61.81% 4.71%,62.30% 4.56%,62.81% 4.41%,63.32% 4.28%,63.85% 4.15%,64.38% 4.03%,64.93% 3.91%,65.48% 3.81%,66.04% 3.71%,66.61% 3.62%,67.19% 3.54%,67.77% 3.46%,68.35% 3.39%,68.95% 3.32%,69.54% 3.26%,70.14% 3.20%,70.74% 3.15%,71.34% 3.09%,71.94% 3.04%,72.55% 2.99%,73.15% 2.94%,73.76% 2.89%,74.37% 2.85%,74.99% 2.82%,75.61% 2.79%,76.23% 2.77%,76.86% 2.75%,77.49% 2.75%,78.13% 2.75%,78.77% 2.75%,79.42% 2.77%,80.07% 2.79%,80.73% 2.82%,81.39% 2.86%,82.05% 2.91%,82.71% 2.96%,83.38% 3.02%,84.05% 3.09%,84.73% 3.16%,85.40% 3.24%,86.08% 3.33%,86.76% 3.42%,87.37% 3.40%,87.88% 3.24%,88.39% 3.07%,88.92% 2.91%,89.46% 2.76%,90.02% 2.60%,90.58% 2.45%,91.16% 2.30%,91.74% 2.15%,92.32% 2.00%,92.90% 1.85%,93.47% 1.69%,94.02% 1.52%,94.56% 1.35%,95.09% 1.18%,95.61% 1.00%,96.14% 0.82%,96.69% 0.64%,97.24% 0.47%,97.82% 0.32%,98.40% 0.19%,99.00% 0.09%,99.60% 0.03%,100.00% 0.00%,100.00% 100.00%)}
 .door.r{right:0;transform-origin:right center;clip-path:polygon(0.00% 100.00%,0.00% 0.00%,0.60% 0.04%,1.20% 0.12%,1.79% 0.23%,2.37% 0.37%,2.94% 0.53%,3.50% 0.70%,4.03% 0.88%,4.56% 1.06%,5.09% 1.23%,5.62% 1.41%,6.16% 1.58%,6.72% 1.74%,7.29% 1.90%,7.87% 2.05%,8.46% 2.20%,9.04% 2.35%,9.61% 2.50%,10.17% 2.65%,10.72% 2.81%,11.25% 2.97%,11.78% 3.13%,12.29% 3.29%,12.80% 3.46%,13.47% 3.39%,14.15% 3.30%,14.82% 3.21%,15.50% 3.14%,16.17% 3.06%,16.84% 3.00%,17.51% 2.94%,18.17% 2.89%,18.83% 2.85%,19.49% 2.81%,20.15% 2.78%,20.80% 2.76%,21.44% 2.75%,22.08% 2.75%,22.72% 2.75%,23.35% 2.76%,23.98% 2.78%,24.60% 2.80%,25.22% 2.83%,25.83% 2.87%,26.44% 2.91%,27.05% 2.95%,27.65% 3.00%,28.26% 3.05%,28.86% 3.11%,29.46% 3.16%,30.06% 3.22%,30.66% 3.28%,31.25% 3.35%,31.84% 3.41%,32.43% 3.49%,33.01% 3.57%,33.58% 3.65%,34.15% 3.74%,34.71% 3.84%,35.26% 3.95%,35.80% 4.07%,36.33% 4.19%,36.85% 4.32%,37.36% 4.46%,37.86% 4.61%,38.35% 4.76%,38.83% 4.92%,39.30% 5.09%,39.76% 5.27%,40.20% 5.46%,40.64% 5.65%,41.06% 5.84%,41.48% 6.04%,42.09% 6.09%,42.84% 6.04%,43.60% 5.99%,44.34% 5.94%,45.09% 5.91%,45.82% 5.88%,46.56% 5.86%,47.28% 5.85%,48.00% 5.85%,48.71% 5.85%,49.41% 5.87%,50.10% 5.89%,50.78% 5.92%,51.45% 5.96%,52.12% 6.01%,52.77% 6.07%,53.41% 6.13%,54.05% 6.21%,54.67% 6.29%,55.29% 6.37%,55.90% 6.46%,56.51% 6.56%,57.11% 6.66%,57.72% 6.76%,58.32% 6.86%,58.91% 6.97%,59.50% 7.08%,60.09% 7.19%,60.66% 7.32%,61.23% 7.45%,61.78% 7.58%,62.31% 7.73%,62.83% 7.88%,63.33% 8.04%,63.82% 8.22%,64.28% 8.40%,64.72% 8.59%,65.14% 8.79%,65.54% 9.00%,65.92% 9.22%,66.27% 9.45%,66.60% 9.69%,66.91% 9.93%,67.20% 10.19%,67.46% 10.45%,68.10% 10.55%,68.99% 10.56%,69.87% 10.57%,70.75% 10.60%,71.61% 10.63%,72.46% 10.68%,73.30% 10.74%,74.11% 10.81%,74.91% 10.89%,75.69% 10.98%,76.45% 11.09%,77.18% 11.21%,77.90% 11.34%,78.59% 11.48%,79.26% 11.64%,79.91% 11.80%,80.54% 11.98%,81.16% 12.16%,81.76% 12.35%,82.36% 12.55%,82.96% 12.75%,83.55% 12.96%,84.12% 13.18%,84.66% 13.41%,85.17% 13.66%,85.65% 13.91%,86.08% 14.18%,86.46% 14.47%,86.78% 14.78%,87.04% 15.10%,87.23% 15.44%,87.35% 15.80%,87.39% 16.18%,87.36% 16.57%,87.26% 16.98%,88.17% 17.20%,89.43% 17.39%,90.67% 17.60%,91.87% 17.84%,93.01% 18.12%,94.08% 18.45%,95.06% 18.81%,95.94% 19.24%,96.72% 19.71%,97.39% 20.26%,97.99% 20.88%,98.52% 21.61%,98.70% 22.55%,97.63% 23.99%,100.00% 100.00%)}
-#env.open .door.l{transform:rotateY(-108deg);filter:brightness(.8)}
-#env.open .door.r{transform:rotateY(108deg);filter:brightness(.8)}
+#env.open .door.l{transform:rotateY(-108deg)}
+#env.open .door.r{transform:rotateY(108deg)}
 .door .arc{position:absolute;left:14%;right:14%;top:20%;height:40%;border:2px solid #f7d6c0;border-radius:50% 50% 6px 6px / 22% 22% 6px 6px;
   box-shadow:inset 0 0 0 6px rgba(247,214,192,.14), inset 0 0 0 8px rgba(247,214,192,.6);background:radial-gradient(circle,rgba(255,236,224,.6) 1.5px,transparent 2.1px) 0 0/16px 16px}
 .door .pan{position:absolute;left:14%;right:14%;top:66%;bottom:5%;border:2px solid #f7d6c0;border-radius:6px;box-shadow:inset 0 0 0 7px rgba(247,214,192,.18), inset 0 0 0 9px rgba(247,214,192,.55)}
@@ -529,12 +530,10 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
           <div lang="hi"><h3>प्रतिष्ठान</h3><ul class="small"><li>दिनेश जनरल स्टोर्स, महिदपुर रोड – <span class="ph">9893434132</span></li><li>माहेश्वरी इलेक्ट्रॉनिक्स, महिदपुर रोड – <span class="ph">9893194758</span></li><li>दिनेश मंडोवरा (पत्रकार दैनिक भास्कर), महिदपुर रोड – <span class="ph">9893194758</span></li><li>अक्षय इलेक्ट्रिकल्स, महिदपुर रोड – <span class="ph">9755618365</span></li><li>अक्षय इलेक्ट्रिकल्स 2.0, महिदपुर रोड – <span class="ph">8085234432</span></li><li>माहेश्वरी गिफ्ट गैलेक्सी, महिदपुर रोड – <span class="ph">9893740262</span></li><li>विजय ट्रेडर्स, महिदपुर रोड – <span class="ph">9893245652</span></li><li>शुभम् कृषि सेवा केन्द्र, महिदपुर रोड – <span class="ph">9893863652</span></li><li>पर्ल फैशन अपैरल बुटिक, महिदपुर रोड – <span class="ph">9039523552</span></li></ul>
           <hr><h3>बाल मनुहार</h3>
           <div class="poem">फूलों सी मुस्कान लिए, नन्हे मुख पर प्यार,<br>बाल सखा सब विनती करते, पधारो जी आप सपरिवार।</div>
-          <div class="sub">मेरे चाचा की शादी में ज़रूर-ज़रूर आना</div>
           <div class="kids"><b>नयन, आँचल, आरव, नित्या, नव्या, रिध्वी, नायशा, हितिशा, धैर्या, कृधा, हित्वी, सलोनी, राघव, केशव, खुशबू</b></div></div>
           <div lang="en"><h3 class="en">Family Businesses</h3><ul class="small en"><li>Dinesh General Stores, Mahidpur Road – <span class="ph">9893434132</span></li><li>Maheshwari Electronics, Mahidpur Road – <span class="ph">9893194758</span></li><li>Dinesh Mandowara (Journalist, Dainik Bhaskar), Mahidpur Road – <span class="ph">9893194758</span></li><li>Akshay Electricals, Mahidpur Road – <span class="ph">9755618365</span></li><li>Akshay Electricals 2.0, Mahidpur Road – <span class="ph">8085234432</span></li><li>Maheshwari Gift Galaxy, Mahidpur Road – <span class="ph">9893740262</span></li><li>Vijay Traders, Mahidpur Road – <span class="ph">9893245652</span></li><li>Shubham Krishi Seva Kendra, Mahidpur Road – <span class="ph">9893863652</span></li><li>Pearl Fashion Apparel Boutique, Mahidpur Road – <span class="ph">9039523552</span></li></ul>
           <hr><h3 class="en">A Request from the Little Ones</h3>
           <div class="poem en">With flower-like smiles and love on every little face,<br>all the children request – please come with your family!</div>
-          <div class="sub en">Do come to our Chacha's wedding!</div>
           <div class="kids en"><b>Nayan, Aanchal, Aarav, Nitya, Navya, Ridhvi, Naysha, Hitisha, Dhairya, Kridha, Hitvi, Saloni, Raghav, Keshav, Khushbu</b></div></div>
         </div>
       </div>
@@ -632,13 +631,14 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
   // palace doors
   var env=document.getElementById('env'), envBtn=document.getElementById('envelope');
   document.body.classList.add('locked');
+  (function(){var im=new Image();im.src='palace_art.jpg';if(im.decode)im.decode().catch(function(){})})();
 
   // background song: starts with the tap that opens the gate
   var song=document.getElementById('song'), mbtn=document.getElementById('music'), wantPlay=true, fadeT;
   function setUI(on){mbtn.classList.toggle('playing',on);mbtn.setAttribute('aria-pressed',on);mbtn.setAttribute('aria-label',on?'Pause music':'Play music');
     var tip=mbtn.querySelector('.tip');tip.innerHTML=on?'<span lang="hi">संगीत रोकें</span><span lang="en">Pause music</span>':'<span lang="hi">संगीत चलाएँ</span><span lang="en">Play music</span>'}
   var actx=null, gain=null;
-  function audioSetup(){if(actx)return;var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
+  function audioSetup(){if(actx)return;var iOS=/iP(hone|ad|od)/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);if(!iOS)return;var AC=window.AudioContext||window.webkitAudioContext;if(!AC)return;
     try{actx=new AC();var srcN=actx.createMediaElementSource(song);gain=actx.createGain();gain.gain.value=0;srcN.connect(gain);gain.connect(actx.destination)}catch(e){actx=null;gain=null}}
   function fadeTo(v,ms,done){clearInterval(fadeT);clearTimeout(fadeT);
     if(gain){if(actx.state==='suspended')actx.resume();var t=actx.currentTime,g=gain.gain;g.cancelScheduledValues(t);g.setValueAtTime(g.value,t);g.linearRampToValueAtTime(v,t+ms/1000);fadeT=setTimeout(function(){done&&done()},ms+40);return}
@@ -651,10 +651,10 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
   function openGate(){
     if(env.classList.contains('open'))return;
     startMusic();
-    window.scrollTo(0,0); env.classList.add('open');
+    window.scrollTo(0,0); env.classList.add('open'); window.__busy=true;
     var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
     var inner=document.querySelector('.hero .inner'), scene=inner.querySelector('.scene');
-    function rise(start){[].forEach.call(inner.children,function(c,i){if(c===scene)return;c.style.animation='none';c.offsetWidth;c.style.animation='rise 1.1s cubic-bezier(.2,.7,.2,1) '+(start+i*0.15)+'s both'})}
+    function rise(start){[].forEach.call(inner.children,function(c,i){if(c===scene)return;c.style.animation='none';c.offsetWidth;c.style.animation='risein 1.1s cubic-bezier(.2,.7,.2,1) '+(start+i*0.15)+'s both'})}
     if(reduce){env.classList.add('gone');document.body.classList.remove('locked');return}
     setTimeout(function(){
       // the doorway image as it sits on screen right now (square art, cover-fitted into the door box)
@@ -668,13 +668,13 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
       env.classList.add('gone');
       var from='translate('+(sx-t.left)+'px,'+(sy-t.top)+'px) scale('+k+')';
       var anim=ph.animate([
-        {transform:from,borderRadius:'0 0 0 0 / 0 0 0 0',boxShadow:'0 0 0 0 rgba(0,0,0,0)',offset:0},
-        {transform:from,borderRadius:'0 0 0 0 / 0 0 0 0',boxShadow:'0 0 0 0 rgba(0,0,0,0)',offset:.12},
-        {transform:'translate(0,0) scale(1)',borderRadius:'48% 48% 16px 16px / 30% 30% 16px 16px',boxShadow:'0 0 0 5px #fff8f2,0 0 0 7px #c98b6e,0 22px 46px rgba(150,80,60,.22)'}
+        {transform:from,offset:0},
+        {transform:from,offset:.12},
+        {transform:'translate(0,0) scale(1)'}
       ],{duration:2300,easing:'cubic-bezier(.55,0,.2,1)',fill:'forwards'});
       rise(1.1);
-      setTimeout(function(){burst(50)},1500);
-      anim.onfinish=function(){document.body.classList.remove('entering');requestAnimationFrame(function(){fly.remove()})};
+      setTimeout(function(){window.__busy=false;burst(36)},2200);
+      anim.onfinish=function(){window.__busy=false;document.body.classList.remove('entering');requestAnimationFrame(function(){fly.remove()})};
     },2850);
   }
 
@@ -720,7 +720,7 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
   }
 
   // falling petals
-  var cv=document.getElementById('petals'), cx=cv.getContext('2d'), P=[], W=0, H=0, dpr=Math.min(2,window.devicePixelRatio||1);
+  var cv=document.getElementById('petals'), cx=cv.getContext('2d'), P=[], W=0, H=0, dpr=Math.min(1.5,window.devicePixelRatio||1);
   var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
   function size(){W=innerWidth;H=innerHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0)}
   size(); addEventListener('resize',size);
@@ -729,6 +729,7 @@ footer .flogo{width:80px;margin:0 auto 6px;display:block}
   function burst(n){for(var i=0;i<n;i++){var p=mk(H*.45);p.x=W/2+(Math.random()-.5)*120;p.vy=-1.5-Math.random()*2;p.vx=(Math.random()-.5)*3;P.push(p)}}
   if(!reduce){for(var i=0;i<16;i++)P.push(mk(Math.random()*H))}
   function frame(t){
+    if(window.__busy){if(!frame.cleared){cx.clearRect(0,0,W,H);frame.cleared=1}requestAnimationFrame(frame);return}frame.cleared=0;
     cx.clearRect(0,0,W,H);
     if(!reduce&&P.length<22&&Math.random()<.03)P.push(mk());
     for(var i=P.length-1;i>=0;i--){var p=P[i];
